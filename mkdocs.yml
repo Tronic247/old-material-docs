@@ -9,6 +9,7 @@ copyright: Tronic247
 theme:
     name: null
     custom_dir: 'theme'
-    include_search_page: true
     static_templates:
         - index.html
+    analytics:
+        - gad: ca-pub-8836219589547174

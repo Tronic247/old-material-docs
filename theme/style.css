@@ -1,12 +1,8 @@
-.sides aside {
-	position: sticky;
-	top: 56px;
-	height: 100vh;
-}
 .appbar {
     min-height: 57px;
     z-index: 999;
 }
+
 code {
 	background: #f8f8f8 !important;
 	border-radius: 4px 4px 0px 0px;
@@ -14,21 +10,29 @@ code {
 	font-size: 14px !important;
 	line-height: 20px;
 }
+
 code:hover {
 	background: #f3f3f3 !important;
 }
-#search {
-	padding: 6px 10px;
+
+.search {
+	padding: 6px 8px;
 	border: none;
 	background: #2189ef;
+    color: white;
 	border-radius: 4px;
-	color: white;
-	width: 78px;
+	width: 90px;
 	transition: all 0.2s ease;
 }
-#search:focus {
+
+.search::placeholder {
+	color: white;
+}
+
+.search:focus {
 	width: 200px;
 }
+
 h3 {
     font-size: 30px !important;
     margin: 20px 0px;
@@ -52,13 +56,12 @@ img, svg {
 }
 
 li:before {
-    content: "";
+    content: "•";
     height: 10px;
     width: 10px;
     background: none;
     display: inline-block;
     margin-right: 10px;
-    border-radius: 100px;
 }
 
 .appbar .title {
@@ -76,6 +79,9 @@ li:before {
 }
 
 .sides aside {
+    position: sticky;
+	top: 56px;
+	height: 100vh;
     width: 25%;
     padding-left: 0;
 }
@@ -86,14 +92,6 @@ aside .list {
     border-top: 0;
     height: 100%;
     overflow: auto;
-}
-
-.darkmode--activated .list {
-    background-color: black;
-}
-
-.darkmode--activated .list a {
-    color: white;
 }
 
 aside .list a {

@@ -2,8 +2,8 @@
 {% block content %}
 	<div class="p-4"></div>
 	<div class="background-primary page-title" style="display: flex;">
-		<h1 class="h4 text-white">{{ page.title }}</h1>
-		<a class="btn icon ripple-e" style="margin-left: 0.5em;" href={{ page.edit_url }}><span class="material-icons">edit</span></a>
+		<h1 class="h4 text-white">{{ page.title }}{% if "search" in self._TemplateReference__context.name %}Search{% endif %}</h1>
+		{% if page.edit_url %}<a class="btn icon ripple-e" style="margin-left: 0.5em;" href={{ page.edit_url }}><span class="material-icons">edit</span></a>{% endif %}
 	</div>
 	<article class="row sides p-0 m-0">
 		<aside class="col-3">
@@ -36,6 +36,7 @@
 		</aside>
 		<main class="col-3 p-3">
 			{{ page.content }}
+			{% block page_content %}{% endblock %}
 		</main>
 	</article>
 	</div>
