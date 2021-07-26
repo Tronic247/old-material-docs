@@ -42,9 +42,52 @@
 		Lorem ipsum, dolor sit, amet consectetur adipisicing elit. 
 		<p class="alert-meta">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
 	</div>
-	<p class="alert-meta">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
 </div>
 ```
+
+#### With action
+<div class="p-4 m-1 background-light-grey">
+	<div class="alert alert-primary" role="alert">
+		<div class="alert-icon"><i class="material-icons">info</i></div>
+		<div class="alert-message">
+			Lorem ipsum, dolor sit, amet consectetur adipisicing elit. 
+			<p class="alert-meta">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
+		</div>
+		<div class="close-alert"><button class="text small btn">action</button></div>
+	</div>
+</div>
+```
+<div class="alert alert-primary" role="alert">
+	<div class="alert-icon"><i class="material-icons">info</i></div>
+	<div class="alert-message">
+		Lorem ipsum, dolor sit, amet consectetur adipisicing elit. 
+		<p class="alert-meta">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
+	</div>
+	<div class="close-alert"><button class="text small btn">action</button></div>
+</div>
+```
+
+#### Filled alerts
+<div class="p-4 m-1 background-light-grey">
+	<div class="alert alert-primary alert-filled" role="alert">
+		<div class="alert-icon"><i class="material-icons">info</i></div>
+		<div class="alert-message">
+			Lorem ipsum, dolor sit, amet consectetur adipisicing elit. 
+			<p class="alert-meta">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
+		</div>
+	</div>
+</div>
+```
+<div class="alert alert-primary alert-filled" role="alert">
+	<div class="alert-icon"><i class="material-icons">info</i></div>
+	<div class="alert-message">
+		Lorem ipsum, dolor sit, amet consectetur adipisicing elit. 
+		<p class="alert-meta">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
+	</div>
+</div>
+```
+
+
 
 #### Different colors
 <div class="p-4 m-1 background-light-grey">
