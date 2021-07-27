@@ -18,21 +18,7 @@ code:hover {
     background: #f3f3f3 !important;
 }
 
-#search {
-    padding: 6px 10px;
-    border: none;
-    background: #2189ef;
-    border-radius: 4px;
-    color: white;
-    width: 100px;
-    transition: all 0.2s ease;
-}
-#search::placeholder {
- color:#fff;	
-}
-#search:focus {
-    width: 200px;
-}
+
 
 h3 {
     font-size: 30px !important;
