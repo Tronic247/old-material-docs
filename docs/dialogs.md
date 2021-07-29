@@ -1,6 +1,5 @@
-### Dialogs
-
-#### Dialog Markup
+## Dialog Markup
+Hover to see an explanation.
 <div class="p-4 background-light-grey">
     <img src="https://res.cloudinary.com/tronic247/image/upload/v1626077024/Capture_s7w393.png" usemap="#image-map">
     <map name="image-map">
@@ -60,7 +59,7 @@
 </div>
 ```
 
-#### Trigger
+## Trigger
 
 <div class="p-4 background-light-grey">
     <button data-trigger="dialog" data-dialog="#demo-dialog-trigger" class="text">Open</button>
@@ -125,7 +124,7 @@ Here are avaialable attributes.
     </table>
 </div>
 
-#### Bottom sheet style
+## Bottom sheet style
 <div class="p-4 background-light-grey">
 <button class="text" data-trigger="dialog" data-dialog="#demodialogsheet">Open</button>
    <div class="dialog-overlay" id="demodialogsheet">
@@ -158,7 +157,7 @@ Here are avaialable attributes.
     </div>
 </div>
 ```
-#### Full Screen dialog
+## Full Screen dialog
 <div class="p-4 background-light-grey">
     <button class="text" data-trigger="dialog" data-dialog="#demodialogfs">Open</button>
     <div class="dialog-overlay" id="demodialogfs">
@@ -205,7 +204,7 @@ Here are avaialable attributes.
     </div>
 </div>
 ```
-#### JS (jQuery) API
+## JS (jQuery) API
 Add the class `open` to the dialog when you need to open it.
 Remove the class `open` from the dialog when you need to close it.
 

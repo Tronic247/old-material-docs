@@ -1,6 +1,4 @@
-### Containers
-
-#### Normal container
+## Normal container
 <div class="p-4 background-light-grey">
 	<div class="elevation-1 p-4 background-primary m-4"></div>
 </div>
@@ -11,7 +9,7 @@
 </div>
 ```
 
-#### Fluid container
+## Fluid container
 <div class="p-4 background-light-grey">
 	<div class="elevation-1 p-4 background-primary m-1"></div>
 </div>
