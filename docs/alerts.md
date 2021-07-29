@@ -1,15 +1,17 @@
-### Alerts
+##  Usage
 <div class="p-4 m-1 background-light-grey">
 	<div class="alert alert-primary" role="alert">
 		<p class="alert-message">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
 	</div>
 </div>
+
 ```
 <div class="alert alert-primary" role="alert">
 	<p class="alert-message">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. </p>
 </div>
 ```
-#### With icons
+
+## With icons
 <div class="p-4 m-1 background-light-grey">
 	<div class="alert alert-primary" role="alert">
 		<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -17,6 +19,7 @@
 		<div class="close-alert"><i class="material-icons">close</i></div>
 	</div>
 </div>
+
 ```
 <div class="alert alert-primary" role="alert">
 	<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -25,7 +28,7 @@
 </div>
 ```
 
-#### With meta text
+## With meta text
 <div class="p-4 m-1 background-light-grey">
 	<div class="alert alert-primary" role="alert">
 		<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -35,6 +38,7 @@
 		</div>
 	</div>
 </div>
+
 ```
 <div class="alert alert-primary" role="alert">
 	<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -45,7 +49,7 @@
 </div>
 ```
 
-#### With action
+## With action button
 <div class="p-4 m-1 background-light-grey">
 	<div class="alert alert-primary" role="alert">
 		<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -56,6 +60,7 @@
 		<div class="close-alert"><button class="text small btn">action</button></div>
 	</div>
 </div>
+
 ```
 <div class="alert alert-primary" role="alert">
 	<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -67,7 +72,7 @@
 </div>
 ```
 
-#### Filled alerts
+## Filled alerts
 <div class="p-4 m-1 background-light-grey">
 	<div class="alert alert-primary alert-filled" role="alert">
 		<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -77,6 +82,7 @@
 		</div>
 	</div>
 </div>
+
 ```
 <div class="alert alert-primary alert-filled" role="alert">
 	<div class="alert-icon"><i class="material-icons">info</i></div>
@@ -89,7 +95,7 @@
 
 
 
-#### Different colors
+## Different colors
 <div class="p-4 m-1 background-light-grey">
 	<div class="alert alert-primary" role="alert">
 		<p class="alert-message">.alert-primary</p>
@@ -107,6 +113,7 @@
 		<p class="alert-message">.alert-dark</p>
 	</div>
 </div>
+
 ```
 <div class="alert alert-primary" role="alert">
 	<p class="alert-message">.alert-primary</p>

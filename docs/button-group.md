@@ -1,15 +1,5 @@
-### Button group
-
-<div class="p-4 m-1 background-light-grey">
-	<div class="button-group">
-		<button>Button</button>
-		<button>Button</button>
-		<button>Button</button>
-	</div>
-</div>
-
-#### Usage
-Create a `div` or any element with the class `button-group`. Add then add buttons inside that element.
+## Usage
+Create a  `div` or any element with the class `button-group`. Add then add buttons inside that element.
 ```
 <div class="button-group">
 	<button>Button</button>
@@ -18,7 +8,7 @@ Create a `div` or any element with the class `button-group`. Add then add button
 </div>
 ```
 
-#### Outlined button group
+## Outlined button group
 Create add the class `outlined` to the element with the class `button-group` and to the buttons.
 
 <div class="p-4 m-1 background-light-grey">
@@ -37,7 +27,7 @@ Create add the class `outlined` to the element with the class `button-group` and
 </div>
 ```
 
-#### Text button group
+## Text button group
 
 <div class="p-4 m-1 background-light-grey">
 	<div class="button-group">
@@ -55,7 +45,7 @@ Create add the class `outlined` to the element with the class `button-group` and
 </div>
 ```
 
-#### Unelevated button group
+## Unelevated button group
 
 <div class="p-4 m-1 background-light-grey">
 	<div class="button-group">

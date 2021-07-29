@@ -1,6 +1,4 @@
-### Checkboxes
-
-#### Normal Checkbox
+## Normal Checkbox
 <div class="p-4 m-1 background-light-grey">
 	<label class="checkbox">
 		<input type="checkbox">
@@ -15,7 +13,7 @@
 </label>
 ```
 
-#### Disabled Checkbox
+## Disabled Checkbox
 <div class="p-4 m-1 background-light-grey">
 	<label class="checkbox">
 		<input type="checkbox" disabled="">
@@ -30,7 +28,7 @@
 </label>
 ```
 
-#### Checkbox without a label
+## Checkbox without a label
 If there is no label for the checkbox, the `span` element should not be removed.
 <div class="p-4 m-1 background-light-grey">
 	<label class="checkbox">

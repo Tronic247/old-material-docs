@@ -1,8 +1,10 @@
-### Installing localy
+## Installing localy
 
 If you want to install locally, simply click the button below.
 
-<a class="btn" href="https://github.com/Tronic247/material/archive/refs/heads/main.zip">Download</a>
+<br>
+<a class="btn unelevated" href="https://github.com/Tronic247/material/archive/refs/heads/main.zip">Download</a>
+<br><br>
 
 The zip file you downloaded contains these files:
 ```
@@ -10,34 +12,35 @@ dist/ <Compiled files>
 src/ <Source files>
 ```
 
-<div class="p-4 elevation-2">
- &gt; Note that jQuery and Material icons must be imported before importing the library files. See below how to import them using a CDN.
-<br> &gt; The Roboto font is automatically imported by Google fonts CDN service.
+<div class="alert alert-primary">
+ Note that jQuery and Material icons must be imported before importing the library files. See below how to import them using a CDN.
+<br>The Roboto font is automatically imported by Google fonts CDN service.
 </div>
-### Installing from a CDN
+
+## Installing from a CDN
 
 if you want to use a CDN, see below.
 
-#### Material icons
+## Material icons
 
 ```
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 ```
 
-#### jQuery
+## jQuery
 
 ```
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 ```
 
-#### Tronic247 Material
+## Tronic247 Material
 
 ```
 <link href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/css/material.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/js/material.min.js"></script>
 ```
 
-### Starter template
+## Starter template
 
 ```
 <!doctype html>
