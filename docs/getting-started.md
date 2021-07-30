@@ -7,7 +7,7 @@ If you want to install locally, simply click the button below.
 <br><br>
 
 The zip file you downloaded contains these files:
-```
+```xml
 dist/ <Compiled files>
 src/ <Source files>
 ```
@@ -23,26 +23,26 @@ if you want to use a CDN, see below.
 
 ## Material icons
 
-```
+```xml
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 ```
 
 ## jQuery
 
-```
+```xml
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 ```
 
 ## Tronic247 Material
 
-```
+```xml
 <link href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/css/material.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/js/material.min.js"></script>
 ```
 
 ## Starter template
 
-```
+```xml
 <!doctype html>
 <html lang="en">
 <head>

@@ -2,10 +2,10 @@
 {% block content %}
 <div class="background-primary page-title" style="display: flex;align-items: center;">
 
-			<h1 class="h4 text-white">{{ page.title }}</h1>
-			<a class="btn text text-white dark small" style="height: max-content; margin-left: 0.5em;" href={{ page.edit_url }} data-tooltip="Edit this page on Github">Edit this page</a>
-		
-	</div>
+	<h1 class="h4 text-white">{{ page.title }}</h1>
+	<a class="btn text text-white dark small" style="height: max-content; margin-left: 0.5em;" href={{ page.edit_url }} data-tooltip="Edit this page on Github">Edit this page</a>
+
+</div>
 </div>
 <article class="row sides p-0 container-fluid" id="main-content">
 	<aside class="col-3 p-0">
@@ -37,7 +37,23 @@
 	</div>
 </aside>
 <main class="col-3 p-3">
-	{{ page.content }}
+	<div class="row">
+		<div class="col-10">
+			{{ page.content }}
+		</div>
+		<div class="col-2" id="table-of-contents">
+			{% set toc_num = namespace(value=0) %}
+			{% for toc_item in page.toc %}{% set toc_num.value = toc_num.value + 1 %}{% endfor %}
+			{% if toc_num.value != 0 %}<div class="list small">
+				{% for toc_item in page.toc %}
+				<a class="list-item ripple-e" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+				{% for toc_item in toc_item.children %}
+				<a class="list-item ripple-e sub" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+				{% endfor %}
+				{% endfor %}
+			</div>{% else %}<p>This page is empty... Maybe you can <a href="{{ page.edit_url }}">contribute to this page</a>?</p>{% endif %}
+		</div>
+	</div>
 </main>
 </article>
 </div>

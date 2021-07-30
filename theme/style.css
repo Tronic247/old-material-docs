@@ -121,3 +121,24 @@ aside .list {
 footer {
     text-align: center;
 }
+.demobox {
+    display: inline-flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    margin: 20px;
+    align-items: center;
+    padding: 20px;
+}
+#table-of-contents {
+    position: sticky;
+    top: 70px;
+    height: max-content;
+}
+.list p {
+    padding: 1em;
+}
+
+.list .sub {
+    padding-left: 4em;
+}
