@@ -39,9 +39,16 @@
 <main class="col-3 p-3">
 	<div class="row">
 		<div class="col-10">
+			{% set toc_num = namespace(value=0) %}
+			{% for toc_item in page.toc %}{% set toc_num.value = toc_num.value + 1 %}{% endfor %}
+			{% if toc_num.value != 0 %}{% else %}
+			<div class="alert alert-primary" role="alert">
+				<p class="alert-message">This is still work in progress... Meanwhile you can <a href="{{ page.edit_url }}" class="link">contribute to this page</a>?</p>
+			</div>
+			<p></p>{% endif %}
 			{{ page.content }}
 		</div>
-		<div class="col-2" id="table-of-contents">
+		<div class="col" id="table-of-contents">
 			{% set toc_num = namespace(value=0) %}
 			{% for toc_item in page.toc %}{% set toc_num.value = toc_num.value + 1 %}{% endfor %}
 			{% if toc_num.value != 0 %}<div class="list small">
@@ -51,7 +58,7 @@
 				<a class="list-item ripple-e sub" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
 				{% endfor %}
 				{% endfor %}
-			</div>{% else %}<p>This page is empty... Maybe you can <a href="{{ page.edit_url }}">contribute to this page</a>?</p>{% endif %}
+			</div>{% endif %}
 		</div>
 	</div>
 </main>

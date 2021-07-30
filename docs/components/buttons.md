@@ -24,7 +24,7 @@
 	<button class="demobtn unelevated dark">Unelevated - Dark</button>
 </div>
 
-```
+```xml
 <button class="primary">Primary</button>
 <button class="secondary">Secondary</button>
 <button class="success">Success</button>
@@ -56,7 +56,7 @@ Add the class `.btn` to the element.
 	<button class="btn">Click Me</button>
 </div>
 
-```
+```xml
 <button class="btn">Click Me</button>
 ```
 
@@ -66,7 +66,7 @@ Add the class `.unelevated` to the element.
 	<button class="btn unelevated">Click Me</button>
 </div>
 
-```
+```xml
 <button class="btn unelevated">Click Me</button>
 ```
 
@@ -76,7 +76,7 @@ Add the class `.text` to the element.
 	<button class="btn text">Click Me</button>
 </div>
 
-```
+```xml
 <button class="btn text">Click Me</button>
 ```
 
@@ -86,7 +86,7 @@ Add the class `.outlined` to the element.
 	<button class="btn outlined">Click Me</button>
 </div>
 
-```
+```xml
 <button class="btn outlined">Click Me</button>
 ```
 
@@ -96,7 +96,7 @@ Add the class `.btn` to the `a` element.
 	<a class="btn" href="https://google.com" onclick="return false;">Click Me</a>
 </div>
 
-```
+```xml
 <a class="btn" href="https://google.com">Click Me</a>
 ```
 
@@ -106,7 +106,7 @@ Add the class `.disabled` to the element.
 	<button class="btn disabled">Click Me</button>
 </div>
 
-```
+```xml
 <button class="btn disabled">Click Me</button>
 ```
 <div class="alert"><p class="alert-message">Please note that the <code>disabled</code> buttons use <code>pointer-events:none</code> to disable the mouse navigation. You must block the button from clicking from the tabbing also.</p></div>

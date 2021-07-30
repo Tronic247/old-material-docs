@@ -25,7 +25,7 @@ h2[id] {
     border-bottom: 1px solid gainsboro;
     padding: 0px 0px 11px 0px;
 }
-h4 {
+h4[id] {
     font-size: 24px !important;
     margin: 10px 0px;
 }
@@ -119,7 +119,8 @@ aside .list {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
+    line-height: 35px;
 }
 .demobox {
     display: inline-flex;
@@ -141,4 +142,13 @@ footer {
 
 .list .sub {
     padding-left: 4em;
+}
+* {
+    scroll-behavior: smooth;
+}
+h3[id] {
+    font-size: 24px !important;
+    color: #3f3f3f;
+    margin-top: 18px;
+    margin-bottom: 20px;
 }

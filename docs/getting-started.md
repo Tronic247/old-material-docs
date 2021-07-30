@@ -21,19 +21,19 @@ src/ <Source files>
 
 if you want to use a CDN, see below.
 
-## Material icons
+### Material icons
 
 ```xml
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 ```
 
-## jQuery
+### jQuery
 
 ```xml
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 ```
 
-## Tronic247 Material
+### Tronic247 Material
 
 ```xml
 <link href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/css/material.min.css" rel="stylesheet" />

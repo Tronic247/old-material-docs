@@ -22,7 +22,7 @@
     </div>
 </div>
 
-```
+```xml
 <div class="card">
     <div class="card-ripple-container ripple-e">
         <div class="card-header">
@@ -62,7 +62,7 @@
 </div>
 </div>
 
-```
+```xml
 <div class="card">
     <div class="card-ripple-container ripple-e">
         <div class="card-header">
@@ -105,7 +105,7 @@
   </div>
 </div>
 
-```
+```xml
 <div class="card collapsed">
     <div class="card-ripple-container ripple-e">
         <div class="card-header">
@@ -166,7 +166,7 @@
   </div>
 </div>
 
-```
+```xml
 <div class="card">
     <div class="card-header header-before">
       <div class="row">
@@ -217,7 +217,7 @@ Add the class `outlined` to the `.card` element.
 </div>
 </div>
 
-```
+```xml
 <div class="card outlined">
     <div class="card-ripple-container ripple-e">
         <div class="card-header">

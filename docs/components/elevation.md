@@ -1,3 +1,5 @@
+## Usage
+Copy the class.
 <div class="elevation-1 demobox"> <code>.elevation-1</code> </div>
 <div class="elevation-2 demobox"> <code>.elevation-2</code> </div>
 <div class="elevation-3 demobox"> <code>.elevation-3</code> </div>

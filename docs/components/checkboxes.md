@@ -6,7 +6,7 @@
 	</label>
 </div>   
 
-```
+```xml
 <label class="checkbox">
 	<input type="checkbox">
 	<span>Check me</span>
@@ -21,7 +21,7 @@
 	</label>
 </div>   
 
-```
+```xml
 <label class="checkbox">
 	<input type="checkbox" disabled>
 	<span>Check me</span>
@@ -37,7 +37,7 @@ If there is no label for the checkbox, the `span` element should not be removed.
 	</label>
 </div>   
 
-```
+```xml
 <label class="checkbox">
 	<input type="checkbox">
 	<span></span>
