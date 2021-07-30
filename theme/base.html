@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             {% if page.title %}{{ page.title }} - {% endif %}{{
@@ -11,9 +11,17 @@
         <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}" />
         {% endif %}
         <meta charset="utf-8" />
-        <meta name="google-site-verification" content="JMK3acXgb2TqdMocLLdL9QkR1A5iFuvhWBSTNM4QTNo" />
+        <meta
+            name="google-site-verification"
+            content="JMK3acXgb2TqdMocLLdL9QkR1A5iFuvhWBSTNM4QTNo"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <script data-no-instant id="locationcheck">if (window.location.href.indexOf("tronic247.github.io") > -1) { window.location = 'https://material.pages.dev/getting-started/';document.getElementById('locationcheck').remove();}</script>
+        <script data-no-instant id="locationcheck">
+            if (window.location.href.indexOf("tronic247.github.io") > -1) {
+                window.location = "https://material.pages.dev/getting-started/";
+                document.getElementById("locationcheck").remove();
+            }
+        </script>
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -22,56 +30,97 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/css/material.min.css"
         />
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/github.min.css" integrity="sha512-0aPQyyeZrWj9sCA46UlmWgKOP0mUipLQ6OZXu8l4IcAmD2u31EPEy9VcIMvl7SoAaKe8bLXZhYoMaE/in+gcgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" /> 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/github.min.css"
+            integrity="sha512-0aPQyyeZrWj9sCA46UlmWgKOP0mUipLQ6OZXu8l4IcAmD2u31EPEy9VcIMvl7SoAaKe8bLXZhYoMaE/in+gcgA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+        />
         <link rel="stylesheet" href="{{ base_url }}/style.css" />
     </head>
     <body class="container-fluid p-0 m-0">
-        <header class="appbar elevating
-               " style="position: fixed; top: 0; left: 0; width: 100%">
-        <div class="appbar-content">
-            
-            <a class="appbar-brand" href="https://material.pages.dev">Tronic247 Material</a>
-          
-            <ul class="appbar-items appbar-item--end">
-                <form class="input-form">
-                    <input class="input input-with-icon" placeholder="Search" id="search">
-                    <span class="search-icon material-icons">search</span>
-                </form>  
-            </ul>
-        </div>
-    </header>
-        <div class="p-4"></div>
-        
+        <header
+            class="appbar elevating"
+            style="position: fixed; top: 0; left: 0; width: 100%"
+        >
+            <div class="appbar-content">
+                <a class="appbar-brand" href="{{ base_url }}"
+                    >Tronic247 Material</a
+                >
+
+                <ul class="appbar-items appbar-item--end">
+                    <form class="input-form">
+                        <input
+                            class="input input-with-icon"
+                            placeholder="Search"
+                            id="search"
+                        />
+                        <span class="search-icon material-icons">search</span>
+                    </form>
+                </ul>
+            </div>
+        </header>
+        <div style="padding-bottom: 57px;"></div>
+
         {% block content %}{% endblock %}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Material dev ads -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8836219589547174"
-     data-ad-slot="1317023627"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Material dev ads -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8836219589547174"
-     data-ad-slot="1317023627"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <!-- Material dev ads -->
+        <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-8836219589547174"
+            data-ad-slot="1317023627"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+        ></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <!-- Material dev ads -->
+        <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-8836219589547174"
+            data-ad-slot="1317023627"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+        ></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <footer class="p-4 background-primary text-white">
-            <p>People who supported this project:</p><br>
-            <a href="https://github.com/tronic247/material-docs/graphs/contributors">
-                <img src="https://contrib.rocks/image?repo=tronic247/material-docs" />
-            </a><br><br>
-             <p>A framework by <a href="http://tronic247.com/?ref=material" class="text-white" rel="follow">Tronic247</a></p><br>
+            <p>People who supported this project:</p>
+            <br />
+            <a
+                href="https://github.com/tronic247/material-docs/graphs/contributors"
+            >
+                <img
+                    src="https://contrib.rocks/image?repo=tronic247/material-docs"
+                    alt="Best contributors of this project"
+                /> </a
+            ><br /><br />
+            <p>
+                A framework by
+                <a
+                    href="http://tronic247.com/?ref=material"
+                    class="text-white"
+                    rel="follow"
+                    >Tronic247</a
+                >
+            </p>
+            <br />
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/js/material.min.js"></script>
@@ -92,7 +141,22 @@
         <script>
             hljs.highlightAll();
         </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-     <script type="text/javascript"> docsearch({apiKey: '2f622bb017fc137b9c550c565cb2452e',indexName: 'tronic_material',inputSelector: '#search',debug: !1}); setInterval(function() {$(".algolia-docsearch-suggestion--wrapper").addClass('ripple-e dark-ripple')}, 10);</script> 
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
+        ></script>
+        <script type="text/javascript">
+            docsearch({
+                apiKey: "2f622bb017fc137b9c550c565cb2452e",
+                indexName: "tronic_material",
+                inputSelector: "#search",
+                debug: !1,
+            });
+            setInterval(function () {
+                $(".algolia-docsearch-suggestion--wrapper").addClass(
+                    "ripple-e dark-ripple"
+                );
+            }, 10);
+        </script>
     </body>
 </html>

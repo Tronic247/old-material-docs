@@ -62,16 +62,14 @@ li:before {
 
 .sides aside {
     width: 25%;
-    position: sticky;
-    top: 56px;
     height: 100vh;
+    position: sticky;
+    top: 57px;
 }
 
 aside .list {
-    position: sticky;
-    top: 57px;
     border-top: 0;
-    height: 100%;
+    height: 94%;
     overflow: auto;
 }
 
@@ -116,6 +114,18 @@ aside .list {
         word-wrap: break-word;
         width: 100%;
     }
+
+    .banner .btn {
+        margin-bottom: 1em;
+    }
+}
+
+.list p {
+    padding: 1em;
+}
+
+.list .sub {
+    padding-left: 4em;
 }
 
 footer {
