@@ -1,6 +1,6 @@
 .appbar {
     min-height: 57px;
-    z-index: 999;
+    z-index: 1000;
 }
 .adsbygoogle {
     margin-top: 60px;
@@ -64,13 +64,15 @@ li:before {
     width: 25%;
     position: sticky;
     top: 56px;
-    height: 100vh;
+    height: calc(100vh - 57px);
 }
 
-aside .list {
+.sides aside .list {
     position: sticky;
     top: 57px;
     border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
     height: 100%;
     overflow: auto;
 }
@@ -112,9 +114,19 @@ aside .list {
         position: static;
     }
 
+    .sides aside .list {
+        border-bottom: initial !important;
+        border-top: initial !important;
+        border-bottom: initial !important;
+    }
     .sides main {
         word-wrap: break-word;
         width: 100%;
+    }
+
+    #table-of-contents {
+        order: 0 !important;
+        position: static !important;
     }
 }
 
@@ -135,6 +147,7 @@ footer {
     position: sticky;
     top: 70px;
     height: max-content;
+    order: 1;
 }
 .list p {
     padding: 1em;
