@@ -12,3 +12,4 @@ theme:
     static_templates:
         - index.html
         - ads.txt
+        - manifest.json

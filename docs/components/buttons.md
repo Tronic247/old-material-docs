@@ -111,6 +111,27 @@ Add the class `.disabled` to the element.
 ```
 <div class="alert"><p class="alert-message">Please note that the <code>disabled</code> buttons use <code>pointer-events:none</code> to disable the mouse navigation. You must block the button from clicking from the tabbing also.</p></div>
 
+## Icons
+<div class="p-4 m-1 background-light-grey">
+	<button class="btn"><i class="material-icons">favorite</i>Click Me</button>
+	<button class="btn">Click Me&nbsp;&nbsp;<i class="material-icons">favorite</i></button>
+</div>
+
+```xml
+<button class="btn"><i class="material-icons">favorite</i>Click Me</button>
+<button class="btn">Click Me&nbsp;&nbsp;<i class="material-icons">favorite</i></button>
+```
+
+## Shaped button
+Add the class `shaped` to the button.
+<div class="p-4 m-1 background-light-grey">
+	<button class="btn shaped">Click Me</button>
+</div>
+
+```xml
+<button class="btn shaped">Click Me</button>
+```
+
 ## Button colors
 
 <div class="table-container">
