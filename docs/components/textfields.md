@@ -62,6 +62,22 @@
 </label>
 ```
 
+## Textarea
+
+<div class="p-5 m-1">
+	<label class="textfield border-bottom">
+		<textarea placeholder=" "></textarea>
+		<span>Textarea</span>
+	</label>
+</div>
+
+```xml
+<label class="textfield border-bottom">
+	<input placeholder=" ">
+	<span>Textfield</span>
+</label>
+```
+
 
 ## Error state
 

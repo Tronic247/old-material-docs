@@ -29,20 +29,7 @@ h4[id] {
     font-size: 24px !important;
     margin: 10px 0px;
 }
-ul {
-    list-style: none !important;
-    margin: 10px 39px;
-    line-height: 37px !important;
-}
-li:before {
-    content: "";
-    height: 10px;
-    width: 10px;
-    background: none;
-    display: inline-block;
-    margin-right: 10px;
-    border-radius: 100px;
-}
+
 .appbar .title {
     color: white;
 }
@@ -135,9 +122,16 @@ footer {
     position: sticky;
     top: 70px;
     height: max-content;
+    order: 1;
 }
 .list p {
     padding: 1em;
+}
+@media only screen and (max-width: 600px) {
+  #table-of-contents {
+    order: 0;
+    position: static !important;
+  }
 }
 
 .list .sub {

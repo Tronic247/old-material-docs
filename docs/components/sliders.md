@@ -8,7 +8,7 @@ Create an input element and add the class *any-class*. Then Init it with JS.
 <input type="text" class="js-range-slider" name="my_range" value="" />
 ```
 
-```xml
+```javascript
 jQuery('.js-range-slider').ionRangeSlider();
 ```
 
