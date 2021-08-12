@@ -6,12 +6,18 @@
     margin-top: 60px;
 }
 #offers-content {
-  height: 80px;
+  height: 160px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border:2px solid #a2a2a254;
   border-radius: 4px;
   margin-bottom: 20px;
 }
+#offers-content * {
+    margin: 0 !important;
+} 
 code {
     background: #f8f8f8 !important;
     border-radius: 4px 4px 0px 0px;
