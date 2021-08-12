@@ -8,10 +8,7 @@
 #offers-content {
   height: 160px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border:2px solid #a2a2a254;
+  border:1px solid #a2a2a254;
   border-radius: 4px;
   margin-bottom: 20px;
 }
