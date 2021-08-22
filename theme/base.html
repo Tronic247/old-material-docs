@@ -141,8 +141,8 @@
                     : fallbackCopyTextToClipboard(o);
             }
             $("pre")
-                .attr("data-tooltip", "Click to Copy")
-                .click(function (event) {
+                .attr("data-tooltip", "Double Click to Copy")
+                .dblclick(function (event) {
                     var t = this;
                     copyTextToClipboard($(t).text());
                     Material.Snackbar({ message: "Copied to clipboard" });
