@@ -27,10 +27,10 @@ if you want to use a CDN, see below.
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 ```
 
-### jQuery
+### jQuery (Slim version)
 
 ```xml
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 ```
 
 ### Tronic247 Material
@@ -55,7 +55,7 @@ if you want to use a CDN, see below.
 <body class="container">
 	<h1>Tronic247 Material Starter Template</h1>
 	<p>All set visit docs now</p>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/js/material.min.js"></script>
 </body>
 </html>
