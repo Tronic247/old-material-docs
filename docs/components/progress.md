@@ -21,7 +21,7 @@
 
 ## Loading with value and buffer
 <div class="p-4 background-light-grey">
-	<div class="progress with-value" style="--value:10%;"></div>
+	<div class="progress buffering" style="--value:20%;--buffer:30%;"></div>
 </div>
 
 ```xml
