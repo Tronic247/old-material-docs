@@ -12,8 +12,6 @@ Add class `ripple-e` to the element you want to add the ripple effect.
 ```
 
 ## Ripple colors
-Add the class `active` to the element with the class `chip ripple-e`.
-
 <div class="p-4 row m-1 background-light-grey">
 	<div class="col m-1 rounded background-primary ripple-e light-ripple elevation-1" style="height: 200px;width: 200px;">Light</div>
 	<div class="col m-1 rounded background-light-grey ripple-e secondary-ripple elevation-1" style="height: 200px;width: 200px;">Secondary</div>
