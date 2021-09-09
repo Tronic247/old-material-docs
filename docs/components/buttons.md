@@ -4,24 +4,28 @@
 	<button class="demobtn success">Success</button>
 	<button class="demobtn danger">Danger</button>
 	<button class="demobtn dark">Dark</button>
+	<button class="demobtn warning">Warning</button>
 	<br><br>
 	<button class="demobtn outlined primary">Outlined - Primary</button>
 	<button class="demobtn outlined secondary">Outlined - Secondary</button>
 	<button class="demobtn outlined success">Outlined - Success</button>
 	<button class="demobtn outlined danger">Outlined - Danger</button>
 	<button class="demobtn outlined dark">Outlined - Dark</button>
+	<button class="demobtn outlined warning">Outlined - Warning</button>
 	<br><br>
 	<button class="demobtn text primary">Text - Primary</button>
 	<button class="demobtn text secondary">Text - Secondary</button>
 	<button class="demobtn text success">Text - Success</button>
 	<button class="demobtn text danger">Text - Danger</button>
 	<button class="demobtn text dark">Text - Dark</button>
+	<button class="demobtn text warning">Text - Warning</button>
 	<br><br>
 	<button class="demobtn unelevated primary">Unelevated - Primary</button>
 	<button class="demobtn unelevated secondary">Unelevated - Secondary</button>
 	<button class="demobtn unelevated success">Unelevated - Success</button>
 	<button class="demobtn unelevated danger">Unelevated - Danger</button>
 	<button class="demobtn unelevated dark">Unelevated - Dark</button>
+	<button class="demobtn unelevated warning">Unelevated - Warning</button>
 </div>
 
 ```xml
@@ -109,7 +113,6 @@ Add the class `.disabled` to the element.
 ```xml
 <button class="btn disabled">Click Me</button>
 ```
-<div class="alert"><p class="alert-message">Please note that the <code>disabled</code> buttons use <code>pointer-events:none</code> to disable the mouse navigation. You must block the button from clicking from the tabbing also.</p></div>
 
 ## Icons
 <div class="p-4 m-1 background-light-grey">
@@ -130,6 +133,16 @@ Add the class `shaped` to the button.
 
 ```xml
 <button class="btn shaped">Click Me</button>
+```
+
+## Square button
+Add the class `square` to the button.
+<div class="p-4 m-1 background-light-grey">
+	<button class="btn square">Click Me</button>
+</div>
+
+```xml
+<button class="btn square">Click Me</button>
 ```
 
 ## Button colors
@@ -168,6 +181,11 @@ Add the class `shaped` to the button.
 		<td>Dark</td>
 		<td>.dark</td>
 		<td><button class="dark">Button</button></td>
+	</tr>
+	<tr>
+		<td>Warning</td>
+		<td>.warning</td>
+		<td><button class="warning">Button</button></td>
 	</tr>
 </tbody>
 </table>

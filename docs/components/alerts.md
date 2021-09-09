@@ -112,6 +112,9 @@
 	<div class="alert alert-dark" role="alert">
 		<p class="alert-message">.alert-dark</p>
 	</div>
+	<div class="alert alert-warning" role="alert">
+		<p class="alert-message">.alert-warning</p>
+	</div>
 </div>
 
 ```xml
@@ -129,5 +132,8 @@
 </div>
 <div class="alert alert-dark" role="alert">
 	<p class="alert-message">.alert-dark</p>
+</div>
+<div class="alert alert-warning" role="alert">
+	<p class="alert-message">.alert-warning</p>
 </div>
 ```

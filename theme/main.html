@@ -8,14 +8,14 @@
 </div>
 <article class="row sides p-0 container-fluid" id="main-content">
 	<aside class="col-3 p-0">
-		<div class="list">
+		<div class="list small">
 			{% if nav|length>1 %}
 			{% for nav_item in nav %} {% if nav_item.children %}
 			<p><strong>{{ nav_item.title }}</strong></p>
 			{% for nav_item in nav_item.children %}
 			<a
 			class="
-			list-item ripple-e
+			list-item
 			{%
 			if
 			nav_item.active%}active{%
@@ -28,7 +28,7 @@
 		</a>
 		{% endfor %}
 		{% else %}
-		<a class="list-item ripple-e {% if nav_item.active%}active{% endif %}" href="{{ nav_item.url|url }}">
+		<a class="list-item {% if nav_item.active%}active{% endif %}" href="{{ nav_item.url|url }}">
 			{{ nav_item.title }}
 		</a>
 		{% endif %} {% endfor %}
