@@ -1,6 +1,6 @@
 ## Installing localy
 
-If you want to install locally, simply click the button below.
+If you want to install locally, click the button below.
 
 <br>
 <a class="btn unelevated" href="https://github.com/Tronic247/material/archive/refs/heads/main.zip">Download</a>
