@@ -1,4 +1,4 @@
-# Nev Repo! - https://github.com/Tronic247/material.tronic247.com
+# New Repo! - https://github.com/Tronic247/material.tronic247.com
 # [Tronic247 Material Docs](https://material.pages.dev/)
 The official docs for Tronic247 Material.
 
