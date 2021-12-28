@@ -1,0 +1,157 @@
+.appbar {
+    min-height: 57px;
+    z-index: 999;
+}
+.adsbygoogle {
+    margin-top: 60px;
+}
+#offers-content {
+  height: 160px;
+  width: 100%;
+  border:1px solid #a2a2a254;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#offers-content * {
+    margin: 0 !important;
+} 
+code {
+    background: #f8f8f8 !important;
+    border-radius: 4px 4px 0px 0px;
+    font-family: "consolas", monospace;
+    font-size: 14px !important;
+    line-height: 20px;
+}
+code:hover {
+    background: #f3f3f3 !important;
+}
+.demobtn {
+    margin: 10px;
+}
+h2[id] {
+    font-size: 30px !important;
+    margin: 20px 0px;
+    border-bottom: 1px solid gainsboro;
+    padding: 0px 0px 11px 0px;
+}
+h4[id] {
+    font-size: 24px !important;
+    margin: 10px 0px;
+}
+
+.appbar .title {
+    color: white;
+}
+.appbar .section.right {
+    margin-right: 0.8em;
+}
+
+.page-title {
+    padding: 2.5em;
+    padding-left: 1.5em;
+    width: 100%;
+}
+
+.sides {
+    margin: 0;
+}
+
+.sides aside {
+    width: 25%;
+    position: sticky;
+    top: 56px;
+    height: 100vh;
+}
+
+aside .list {
+    position: sticky;
+    top: 57px;
+    border-top: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+.sides main {
+    flex-grow: 1;
+}
+
+.sides main code {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    .algolia-autocomplete .ds-dropdown-menu {
+        max-width: calc(100vw - 32px) !important;
+        min-width: calc(100vw - 32px) !important;
+        width: calc(100vw - 32px) !important;
+        margin-left: 16px !important;
+    }
+    .algolia-autocomplete .algolia-docsearch-suggestion--content {
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+    .algolia-autocomplete .algolia-docsearch-suggestion--content:before {
+        display: none !important;
+    }
+    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sides aside {
+        flex: none;
+        width: 100%;
+        height: initial;
+        max-height: 30vh;
+        position: static;
+    }
+
+    .sides main {
+        word-wrap: break-word;
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: left;
+    line-height: 35px;
+}
+.demobox {
+    display: inline-flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    margin: 20px;
+    align-items: center;
+    padding: 20px;
+}
+#table-of-contents {
+    position: sticky;
+    top: 70px;
+    height: max-content;
+    order: 1;
+}
+.list p {
+    padding: 1em;
+}
+@media only screen and (max-width: 600px) {
+  #table-of-contents {
+    order: 0;
+    position: static !important;
+  }
+}
+
+.list .sub {
+    padding-left: 4em;
+}
+* {
+    scroll-behavior: smooth;
+}
+h3[id] {
+    font-size: 24px !important;
+    color: #3f3f3f;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}

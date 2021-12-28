@@ -1,0 +1,19 @@
+{
+  "name": "Tronic247 Material",
+  "short_name": "Tronic247 Material",
+  "display": "minimal-ui",
+  "start_url": "/",
+  "prefer_related_applications": true,
+  "theme_color": "#2196f3",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512"
+    }
+  ]
+}
