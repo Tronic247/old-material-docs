@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Delete
-        run: rm *
+        run: rm -r *
       - name: Clone repo
         run: git clone git@github.com:tronic247/material.tronic247.com .
       - uses: stefanzweifel/git-auto-commit-action@v4
