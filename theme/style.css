@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+#appbar {
+  z-index: 99;
+}
+#table-of-contents {
+  margin-top: -1px;
+  margin-bottom: -1px;
+  position: sticky;
+  top: 70px;
+  height: max-content;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+*,
+*:before,
+*:after {
+  scroll-behavior: smooth;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+code.hljs {
+  padding: 3px 5px;
+}
+.hljs {
+  color: #333;
+  background: #fff;
+}
+.hljs ::selection,
+.hljs::selection {
+  background-color: #c8c8fa;
+  color: #333;
+}
+.hljs-comment {
+  color: #969896;
+}
+.hljs-tag {
+  color: #a1a1a1;
+}
+.hljs-operator,
+.hljs-punctuation,
+.hljs-subst {
+  color: #333;
+}
+.hljs-operator {
+  opacity: 0.7;
+}
+.hljs-bullet,
+.hljs-deletion,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #ed6a43;
+}
+.hljs-attr,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-symbol,
+.hljs-variable.constant_ {
+  color: #0086b3;
+}
+.hljs-class .hljs-title,
+.hljs-title,
+.hljs-title.class_ {
+  color: #795da3;
+}
+.hljs-strong {
+  font-weight: 700;
+  color: #795da3;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-code,
+.hljs-doctag,
+.hljs-keyword.hljs-atrule,
+.hljs-quote,
+.hljs-regexp,
+.hljs-string,
+.hljs-title.class_.inherited__ {
+  color: #183691;
+}
+.hljs-attribute,
+.hljs-function .hljs-title,
+.hljs-section,
+.hljs-title.function_,
+.ruby .hljs-property {
+  color: #795da3;
+}
+.diff .hljs-meta,
+.hljs-keyword,
+.hljs-template-tag,
+.hljs-type {
+  color: #a71d5d;
+}
+.hljs-emphasis {
+  color: #a71d5d;
+  font-style: italic;
+}
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string {
+  color: #333;
+}
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword {
+  font-weight: 700;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Roboto Mono", monospace;
+}
+.hljs:hover {
+  background: #f8f8f8;
+}
+
+@media (max-width: 500px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .block-on-mobile {
+    display: block !important;
+  }
+}
+
+.ripple-e {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+}
+
+button.DocSearch.DocSearch-Button:hover {
+  box-shadow: none !important;
+}
+
+button.DocSearch.DocSearch-Button {
+  transition: all 0.2s ease !important;
+}
+
+form.DocSearch-Form {
+  box-shadow: inset 0px 0px 0px 2px #3f51b5;
+}

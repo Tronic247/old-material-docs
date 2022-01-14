@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="p-4"></div>
+<div class="container">
+   <h1 class="h3">Free templates</h1>
+   <hr>
+   <div id="templates">
+       <a href="https://codepen.io/Tronic247/pen/wvdQqqd" class="template-item ripple-e dark-ripple"><img src="https://user-images.githubusercontent.com/76736580/128628557-2663948a-7275-4c02-b274-d15f7f73feec.png" alt=""></a>
+       <a href="https://codepen.io/Tronic247/pen/yLXVqgM" class="template-item ripple-e dark-ripple"><img src="https://user-images.githubusercontent.com/76736580/132300653-03ba774b-e670-4839-8528-cfda8d271818.png" alt=""></a>
+      <a href="https://codepen.io/Tronic247/pen/XWgNwGM" class="template-item ripple-e dark-ripple"><img src="https://user-images.githubusercontent.com/76736580/132360965-2b078c8b-22bc-497b-aade-a517ec4574c3.png" alt=""></a>
+   </div>
+</div>
+<style>
+p:not(button, .btn) {
+    line-height: 33px;
+}
+.template-item {
+  height: 300px;
+  user-select: none; 
+  width: max-content;
+  background: #00000008;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+#templates {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 28px;
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
+.template-item:hover {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.template-item img {
+    height: 100%;
+}
+</style>
+{% endblock %}

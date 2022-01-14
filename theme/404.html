@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeye | 404</title>
+    <link rel="stylesheet" href="https://unpkg.com/tronic247-material@3.0.0/dist/material.min.css">
+</head>
+<body>
+    
+    <div class="p-5">
+        <h1>404</h1>
+        <p>Page not found</p>
+        <p>Redirecting to Homepage in <span id="count">5</span> seconds</p>
+    </div>
+    
+    <script>
+        var count = 5;
+        var interval = setInterval(function() {
+            count--;
+            if (count <= 0) {
+                clearInterval(interval);
+                window.location.href = "/";
+            }
+            document.getElementById("count").innerHTML = count;
+        }, 1000);
+    </script>
+</body>
+</html>

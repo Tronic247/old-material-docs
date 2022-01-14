@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="container-fluid">
+	<div class="row">
+		<aside class="col-4 col-lg-2">
+			<div class="list small" style="border-right: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;margin-left: -10px;">
+				{% if nav|length>1 %}
+				{% for nav_item in nav %} {% if nav_item.children %}
+				<p class="ms-2 color-dark-6">{{ nav_item.title }}</p>
+				{% for nav_item in nav_item.children %}
+				<a class="
+			item ripple-e
+			{%
+			if
+			nav_item.active%}active{%
+			endif
+			%}
+			" href="{{ nav_item.url|url }}">
+					{{ nav_item.title }}
+				</a>
+				{% endfor %}
+				{% else %}
+				<a class="item ripple-e {% if nav_item.active%}active{% endif %}" href="{{ nav_item.url|url }}">
+					{{ nav_item.title }}
+				</a>
+				{% endif %} {% endfor %}
+				{% endif %}
+			</div>
+		</aside>
+		<main class="col-8 col-lg-10">
+			<div id="offers-content">
+				<ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+					data-ad-layout-key="-gs-3+1f-3d+2z" data-ad-client="ca-pub-8836219589547174"
+					data-ad-slot="6464200648"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+			<h1 class="display-h2 mb-0">{{ page.title }} </h1>
+			<div class="row">
+				<div class="col-9">
+					{% set toc_num = namespace(value=0) %}
+					{% for toc_item in page.toc %}{% set toc_num.value = toc_num.value + 1 %}{% endfor %}
+					{% if toc_num.value != 0 %}{% else %}
+					<div class="alert primary" role="alert">
+						This is still work in progress... Meanwhile you can <a href="{{ page.edit_url }}"
+							class="color-primary-5">contribute to this page</a>?
+					</div>
+					<p></p>{% endif %}
+					{{ page.content }}
+				</div>
+				<div class="col" id="table-of-contents">
+					<a class="btn outlined small" href={{ page.edit_url }}>Edit this page</a>
+					<a href="/advertising.html" class="p-4 btn mt-2 mb-2 rounded unelevated" style="display: block;">
+						Your Ad here
+					</a>
+					<h6 class="display-h5 m-0 mt-4">Table of Contents</h6>
+					{% set toc_num = namespace(value=0) %}
+					{% for toc_item in page.toc %}{% set toc_num.value = toc_num.value + 1 %}{% endfor %}
+					{% if toc_num.value != 0 %}<div class="list small">
+						{% for toc_item in page.toc %}
+						<a class="item" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+						{% for toc_item in toc_item.children %}
+						<a class="item sub" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+						{% endfor %}
+						{% endfor %}
+					</div>{% endif %}
+				</div>
+			</div>
+		</main>
+	</div>
+</article>
+</div>
+{% endblock %}
