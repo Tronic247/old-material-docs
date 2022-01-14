@@ -1,0 +1,14 @@
+on: push
+name: 'Update'
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Clone repo
+        run: git clone git@github.com:tronic247/material.tronic247.com .
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Build Files
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
