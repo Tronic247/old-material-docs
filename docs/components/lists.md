@@ -1,163 +1,101 @@
+<ins id="stable"></ins>
+
 ## Usage
-<div class="p-4 m-1 background-light-grey">
+
+<div class="p-4 m-1">
 	<div class="list" style="width: 20vh;margin: auto;">
-		<a href="#!" class="list-item ripple-e">Item #1</a>
-		<a href="#!" class="list-item ripple-e">Item #2</a>
-		<a href="#!" class="list-item ripple-e">Item #3</a>
-		<a href="#!" class="list-item ripple-e">Item #4</a>
-		<a href="#!" class="list-item ripple-e">Item #5</a>
+		<a href="#!" class="item ripple-e">Item #1</a>
+		<a href="#!" class="item ripple-e">Item #2</a>
+		<a href="#!" class="item ripple-e">Item #3</a>
+		<a href="#!" class="item ripple-e">Item #4</a>
+		<a href="#!" class="item ripple-e">Item #5</a>
 	</div>
-</div> 
+</div>
 
 ```xml
 <div class="list">
-	<a href="#!" class="list-item ripple-e">Item #1</a>
-	<a href="#!" class="list-item ripple-e">Item #2</a>
-	<a href="#!" class="list-item ripple-e">Item #3</a>
-	<a href="#!" class="list-item ripple-e">Item #4</a>
-	<a href="#!" class="list-item ripple-e">Item #5</a>
+	<a href="#!" class="item ripple-e">Item #1</a>
+	<a href="#!" class="item ripple-e">Item #2</a>
+	<a href="#!" class="item ripple-e">Item #3</a>
+	<a href="#!" class="item ripple-e">Item #4</a>
+	<a href="#!" class="item ripple-e">Item #5</a>
 </div>
 ```
 
-## Before and after items
-<div class="p-4 m-1 background-light-grey">
+## Sections
+
+<div class="p-4 m-1">
 	<div class="list" style="width: 20vh;margin: auto;">
-		<a href="#!" class="list-item ripple-e">
-			<span class="material-icons">done</span>Item #1
-			<span class="after">
-				<label class="checkbox">
-					<input type="checkbox" />
-					<span></span>
-				</label>
-			</span>
-		</a>
-		<a href="#!" class="list-item ripple-e">
-			<span class="material-icons">done</span>Item #2
-			<span class="after">
-				<label class="checkbox">
-					<input type="checkbox" />
-					<span></span>
-				</label>
-			</span>
-		</a>
-		<a href="#!" class="list-item ripple-e">
-			<span class="material-icons">done</span>Item #3
-			<span class="after">
-				<label class="checkbox">
-					<input type="checkbox" />
-					<span></span>
-				</label>
-			</span>
-		</a>
-		<a href="#!" class="list-item ripple-e">
-			<span class="material-icons">done</span>Item #4
-			<span class="after">
-				<label class="checkbox">
-					<input type="checkbox" />
-					<span></span>
-				</label>
-			</span>
-		</a>
-		<a href="#!" class="list-item ripple-e">
-			<span class="material-icons">done</span>Item #5
-			<span class="after">
-				<label class="checkbox">
-					<input type="checkbox" />
-					<span></span>
-				</label>
-			</span>
+		<a href="#!" class="item ripple-e">
+			<div class="left">
+				Left
+			</div>
+			<div class="middle">
+				Middle
+			</div>
+			<div class="right">
+				Right
+			</div>
 		</a>
 	</div>
-</div> 
+</div>
 
 ```xml
 <div class="list">
-	<a href="#!" class="list-item ripple-e">
-		<span class="material-icons">done</span>Item #1
-		<span class="after">
-			<label class="checkbox">
-				<input type="checkbox" />
-				<span></span>
-			</label>
-		</span>
-	</a>
-	<a href="#!" class="list-item ripple-e">
-		<span class="material-icons">done</span>Item #2
-		<span class="after">
-			<label class="checkbox">
-				<input type="checkbox" />
-				<span></span>
-			</label>
-		</span>
-	</a>
-	<a href="#!" class="list-item ripple-e">
-		<span class="material-icons">done</span>Item #3
-		<span class="after">
-			<label class="checkbox">
-				<input type="checkbox" />
-				<span></span>
-			</label>
-		</span>
-	</a>
-	<a href="#!" class="list-item ripple-e">
-		<span class="material-icons">done</span>Item #4
-		<span class="after">
-			<label class="checkbox">
-				<input type="checkbox" />
-				<span></span>
-			</label>
-		</span>
-	</a>
-	<a href="#!" class="list-item ripple-e">
-		<span class="material-icons">done</span>Item #5
-		<span class="after">
-			<label class="checkbox">
-				<input type="checkbox" />
-				<span></span>
-			</label>
-		</span>
+	<a href="#!" class="item ripple-e">
+		<div class="left">
+			Left
+		</div>
+		<div class="middle">
+			Middle
+		</div>
+		<div class="right">
+			Right
+		</div>
 	</a>
 </div>
 ```
 
-## Active Item
-<div class="p-4 m-1 background-light-grey">
+## Active Item 
+Add the class `active` to the item you want to be active.
+<div class="p-4 m-1">
 	<div class="list" style="width: 20vh;margin: auto;">
-		<a href="#!" class="list-item ripple-e">Item #1</a>
-		<a href="#!" class="list-item ripple-e">Item #2</a>
-		<a href="#!" class="list-item ripple-e active">Item #3</a>
-		<a href="#!" class="list-item ripple-e">Item #4</a>
-		<a href="#!" class="list-item ripple-e">Item #5</a>
+		<a href="#!" class="item ripple-e">Item #1</a>
+		<a href="#!" class="item ripple-e">Item #2</a>
+		<a href="#!" class="item ripple-e">Item #3</a>
+		<a href="#!" class="item ripple-e">Item #4</a>
+		<a href="#!" class="item active ripple-e">Item #5</a>
 	</div>
-</div> 
+</div>
 
 ```xml
 <div class="list">
-	<a href="#!" class="list-item ripple-e">Item #1</a>
-	<a href="#!" class="list-item ripple-e">Item #2</a>
-	<a href="#!" class="list-item ripple-e active">Item #3</a>
-	<a href="#!" class="list-item ripple-e">Item #4</a>
-	<a href="#!" class="list-item ripple-e">Item #5</a>
+	<a href="#!" class="item ripple-e">Item #1</a>
+	<a href="#!" class="item ripple-e">Item #2</a>
+	<a href="#!" class="item ripple-e">Item #3</a>
+	<a href="#!" class="item ripple-e">Item #4</a>
+	<a href="#!" class="item active ripple-e">Item #5</a>
 </div>
 ```
 
-## Small List
-<div class="p-4 m-1 background-light-grey">
+## Small list 
+Add the class `small` to the list to make it smaller.
+<div class="p-4 m-1">
 	<div class="list small" style="width: 20vh;margin: auto;">
-		<a href="#!" class="list-item ripple-e">Item #1</a>
-		<a href="#!" class="list-item ripple-e">Item #2</a>
-		<a href="#!" class="list-item ripple-e">Item #3</a>
-		<a href="#!" class="list-item ripple-e">Item #4</a>
-		<a href="#!" class="list-item ripple-e">Item #5</a>
+		<a href="#!" class="item ripple-e">Item #1</a>
+		<a href="#!" class="item ripple-e">Item #2</a>
+		<a href="#!" class="item ripple-e">Item #3</a>
+		<a href="#!" class="item ripple-e">Item #4</a>
+		<a href="#!" class="item active ripple-e">Item #5</a>
 	</div>
-</div> 
+</div>
 
 ```xml
 <div class="list small">
-	<a href="#!" class="list-item ripple-e">Item #1</a>
-	<a href="#!" class="list-item ripple-e">Item #2</a>
-	<a href="#!" class="list-item ripple-e">Item #3</a>
-	<a href="#!" class="list-item ripple-e">Item #4</a>
-	<a href="#!" class="list-item ripple-e">Item #5</a>
+	<a href="#!" class="item ripple-e">Item #1</a>
+	<a href="#!" class="item ripple-e">Item #2</a>
+	<a href="#!" class="item ripple-e">Item #3</a>
+	<a href="#!" class="item ripple-e">Item #4</a>
+	<a href="#!" class="item active ripple-e">Item #5</a>
 </div>
 ```

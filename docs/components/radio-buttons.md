@@ -1,5 +1,7 @@
+<ins id="stable"></ins>
+
 ## Usage
-<div class="p-4 m-1 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
 	<label class="radio">
 		<input type="radio" name="demo$">
 		<span>Item</span>
@@ -30,7 +32,7 @@
 ```
 
 ## Without a label
-<div class="p-4 m-1 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
 	<label class="radio">
 		<input type="radio" name="demolabel">
 		<span></span>
@@ -61,7 +63,7 @@
 ```
 
 ## Disabled
-<div class="p-4 m-1 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
 	<label class="radio">
 		<input type="radio" disabled>
 		<span>Item</span>

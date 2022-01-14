@@ -1,5 +1,7 @@
+<ins id="experimental"></ins>
+
 ## Usage
-<div class="p-4 m-1 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
 	<div class="tab-container">
 		<ul class="tabs">
 			<li><a href="#tab1" class="ripple-e">Tab 1</a></li>
@@ -50,7 +52,7 @@
 ```
 
 ## No function
-<div class="p-4 m-1 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
 		<ul class="tabs no-function">
 	<li><a href="#!" class="ripple-e active">Tab 1</a></li>
 	<li><a href="#!" class="ripple-e">Tab 2</a></li>

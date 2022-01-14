@@ -1,5 +1,7 @@
+<ins id="stable"></ins>
+
 ## Usage
-<div class="p-4 m-1 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
 	<div class="table-container">
 		<table>
 			<thead>

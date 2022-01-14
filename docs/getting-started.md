@@ -1,62 +1,43 @@
-## Installing localy
+## Adding to your project
 
-If you want to install locally, click the button below.
-
-<br>
-<a class="btn unelevated" href="https://github.com/Tronic247/material/archive/refs/heads/main.zip">Download</a>
-<br><br>
+If you need a local copy of the framework, you can download the `zip` folder by clicking the button below.
+<a class="btn mt-2 unelevated" href="https://go.tronic247.com/U2Sa">Download</a>
 
 The zip file you downloaded contains these files:
+
 ```xml
 dist/ <Compiled files>
 src/ <Source files>
 ```
 
-<div class="alert alert-primary">
- Note that jQuery and Material icons must be imported before importing the library files. See below how to import them using a CDN.
-<br>The Roboto font is automatically imported by Google fonts CDN service.
+<div class="alert primary">
+ <div>
+ Note that the font Roboto and Material Design Icons should be imported manually.
+ <div class="mt-2"></div>
+<a class ="btn outlined small primary" href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto Font</a>
+<a class ="btn outlined small primary" href="https://materialdesignicons.com" target="_blank">Material Design Icons</a>
+  </div>
 </div>
 
 ## Installing from a CDN
 
 if you want to use a CDN, see below.
 
-### Material icons
+### Material Design icons
 
 ```xml
-<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
 ```
 
-### jQuery (Slim version)
+### Framework
 
 ```xml
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/material.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/material.min.js"></script>
 ```
 
-### Tronic247 Material
+## CodePen Template
 
-```xml
-<link href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/css/material.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/js/material.min.js"></script>
-```
-
-## Starter template
-
-```xml
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A Basic HTML5 Template</title>
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/css/material.min.css" rel="stylesheet" />
-</head>
-<body class="container">
-	<h1>Tronic247 Material Starter Template</h1>
-	<p>All set visit docs now</p>
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/js/material.min.js"></script>
-</body>
-</html>
-```
+If you want to test the framework on CodePen, you can use the following template:
+<br>
+<a class="btn mt-2 unelevated" href="https://codepen.io/pen?template=MWErzzo" target="_blank">Open</a>

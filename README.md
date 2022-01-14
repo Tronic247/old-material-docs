@@ -1,4 +1,3 @@
-# New Repo! - https://github.com/Tronic247/material.tronic247.com
 # [Tronic247 Material Docs](https://material.pages.dev/)
 The official docs for Tronic247 Material.
 
@@ -18,7 +17,7 @@ Standard build (for production):
 ## Contributors
 These great people help to the documentation of the framework<br>
 <a href="https://github.com/tronic247/material-docs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tronic247/material-docs" />
+  <img src="https://contrib.rocks/image?repo=tronic247/material.tronic247.com" />
 </a>
 
 ## License

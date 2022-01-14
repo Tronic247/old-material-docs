@@ -1,156 +1,144 @@
+<ins id="stable"></ins>
+
 ## Usage
-<div class="p-4 m-1 background-light-grey">
-	<div class="appbar">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
+
+<div class="p-4 m-1 bg-dark-1">
+	<div class="appbar elevation-1">
+		<div class="left">
+			<span class="title">Appbar</span>
 		</div>
 	</div>	
-</div> 
+</div>
 
 ```xml
 <div class="appbar">
-	<div class="appbar-content">
-		<a class="appbar-brand" href="#!">Appbar</a>
+	<div class="left">
+		<span class="title">Appbar</span>
 	</div>
-</div>	
+</div>
 ```
 
 ## Items placement
-<div class="p-4 m-1 background-light-grey">
-	<header class="appbar">
-      <div class="appbar-content">
-        <a class="btn appbar-trigger icon center-ripple">
-          <span class="material-icons">menu</span>
-        </a>
-        <div class="appbar-brand">Tronic247 Material</div>
-        <ul class="appbar-items appbar-item--start">
-          <a class="btn" href="#">Link 1</a>
-        </ul>
-        <ul class="appbar-items appbar-item--end">
-          <a class="btn" href="#">Link 4</a>
-        </ul>
-      </div>
-    </header>
-</div> 
 
-```xml
-<header class="appbar">
-   <div class="appbar-content">
-     <a class="btn appbar-trigger icon center-ripple">
-       <span class="material-icons">menu</span>
-     </a>
-     <div class="appbar-brand">Tronic247 Material</div>
-     <ul class="appbar-items appbar-item--start">
-       <a class="btn" href="#">Link 1</a>
-     </ul>
-     <ul class="appbar-items appbar-item--end">
-       <a class="btn" href="#">Link 4</a>
-     </ul>
-   </div>
-</header>
-```
-
-## With Search form
-<div class="p-4 m-1 background-light-grey">
-	<header class="appbar">
-    <div class="appbar-content">
-        <a class="btn appbar-trigger icon center-ripple">
-            <span class="material-icons">menu</span>
-        </a>
-        <div class="appbar-brand">Tronic247 Material</div>
-        <ul class="appbar-items appbar-item--start">
-            <form class="input-form">
-                <input class="input input-with-icon" placeholder="Search" id="search" />
-                <span class="search-icon material-icons">search</span>
-            </form>
-        </ul>
-    </div>
-</header>
-
-</div> 
-
-```xml
-<header class="appbar">
-    <div class="appbar-content">
-        <a class="btn appbar-trigger icon center-ripple">
-            <span class="material-icons">menu</span>
-        </a>
-        <div class="appbar-brand">Tronic247 Material</div>
-        <ul class="appbar-items appbar-item--start">
-            <form class="input-form">
-                <input class="input input-with-icon" placeholder="Search" id="search" />
-                <span class="search-icon material-icons">search</span>
-            </form>
-        </ul>
-    </div>
-</header>
-```
-
-
-## Colors
-<div class="p-4 m-1 background-light-grey">
-	<div class="appbar mt-2">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
+<div class="p-4 m-1 bg-dark-1">
+	<div class="appbar elevation-1">
+		<div class="left">
+			<span class="title">Left</span>
+		</div>
+        <div class="middle">
+			<span class="title">Middle</span>
+		</div>
+        <div class="right">
+			<span class="title">Right</span>
 		</div>
 	</div>	
-	<div class="appbar mt-2 secondary">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
-		</div>
-	</div>	
-	<div class="appbar mt-2 success">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
-		</div>
-	</div>
-	<div class="appbar mt-2 danger">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
-		</div>
-	</div>
-	<div class="appbar mt-2 dark">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
-		</div>
-	</div>	
-	<div class="appbar mt-2 transparent elevation-1">
-		<div class="appbar-content">
-			<a class="appbar-brand" href="#!">Appbar</a>
-		</div>
-	</div>			
-</div> 
+</div>
 
 ```xml
 <div class="appbar">
-    <div class="appbar-content">
-        <a class="appbar-brand" href="#!">Appbar</a>
-    </div>
+	<div class="left">
+		<span class="title">Left</span>
+	</div>
+    <div class="middle">
+		<span class="title">Middle</span>
+	</div>
+    <div class="right">
+		<span class="title">Right</span>
+	</div>
 </div>
-<div class="appbar secondary">
-    <div class="appbar-content">
-        <a class="appbar-brand" href="#!">Appbar</a>
-    </div>
-</div>
-<div class="appbar success">
-    <div class="appbar-content">
-        <a class="appbar-brand" href="#!">Appbar</a>
-    </div>
-</div>
-<div class="appbar danger">
-    <div class="appbar-content">
-        <a class="appbar-brand" href="#!">Appbar</a>
-    </div>
-</div>
-<div class="appbar dark">
-    <div class="appbar-content">
-        <a class="appbar-brand" href="#!">Appbar</a>
-    </div>
-</div>
-<div class="appbar transparent">
-    <div class="appbar-content">
-        <a class="appbar-brand" href="#!">Appbar</a>
-    </div>
-</div>
-	
 ```
+
+## Using Icons and Buttons
+
+<div class="p-4 m-1 bg-dark-1">
+	<div class="appbar elevation-1">
+		<div class="left">
+			<span class="title">Title</span>
+		</div>
+        <div class="right">
+            <a class="icon" href="#!">
+                <i class="mdi mdi-thumb-up"></i>
+            </a>
+			<a class="btn text" href="#!">
+                Button
+            </a>
+		</div>
+	</div>	
+</div>
+
+```xml
+<div class="appbar">
+	<div class="left">
+		<span class="title">Title</span>
+	</div>
+    <div class="right">
+        <a class="icon" href="#!">
+            <i class="mdi mdi-thumb-up"></i>
+        </a>
+		<a class="btn text" href="#!">
+            Button
+        </a>
+	</div>
+</div>
+```
+
+## Add a color
+
+<div class="p-4 m-1 bg-dark-1">
+	<div class="appbar primary">
+		<div class="left">
+			<span class="title">Appbar With color</span>
+		</div>
+        <div class="right">
+            <a class="btn text" href="#!">
+                Button
+            </a>
+        </div>
+	</div>	
+</div>
+
+```xml
+<div class="appbar primary">
+	<div class="left">
+		<span class="title">Appbar With color</span>
+	</div>
+    <div class="right">
+        <a class="btn text" href="#!">
+            Button
+        </a>
+    </div>
+</div>
+```
+
+## With an input
+
+<div class="p-4 m-1 bg-dark-1">
+    <div class="appbar elevation-1">
+        <div class="left">
+            <span class="title">Appbar With input</span>
+        </div>
+        <div class="right">
+            <input type="text" class="appbar-input" placeholder="Search">
+            <a class="btn text" href="#!">
+                Button
+            </a>
+        </div>
+    </div>
+</div>
+
+```xml
+<div class="appbar elevation-1">
+    <div class="left">
+        <span class="title">Appbar With input</span>
+    </div>
+    <div class="right">
+        <input type="text" class="appbar-input" placeholder="Search">
+        <a class="btn text" href="#!">
+            Button
+        </a>
+    </div>
+</div>
+```
+
+## Elevating the Appbar
+Simply add the class `elevating` to the `appbar` element to make it elevate when scrolling.

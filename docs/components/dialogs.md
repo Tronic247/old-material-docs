@@ -1,6 +1,8 @@
+<ins id="stable"></ins>
+
 ## Dialog Markup
 Hover to see an explanation.
-<div class="p-4 background-light-grey">
+<div class="p-4 m-1 bg-dark-1">
     <img src="https://res.cloudinary.com/tronic247/image/upload/v1626077024/Capture_s7w393.png" usemap="#image-map">
     <map name="image-map">
         <area coords="142,123,371,313" shape="rect" data-tooltip="Content">
@@ -10,209 +12,53 @@ Hover to see an explanation.
     </map>
 </div>
 
-
-```xml
-<div class="dialog-overlay" id="demodialog">
-    <div class="dialog">
-        <div class="dialog-header">
-            <h3>Select Account</h3>
-        </div>
-        <div class="dialog-content">
-            <!--- Content !-->
-            <div class="list">
-                <a href="#!" class="list-item">
-                    <span class="material-icons">person</span>Account
-                    <span class="after">
-                        <label class="radio">
-                            <input name="accounddemo" type="radio" />
-                            <span></span>
-                        </label>
-                    </span>
-                </a>
-                <a href="#!" class="list-item">
-                    <span class="material-icons">person</span>Account
-                    <span class="after">
-                        <label class="radio">
-                            <input name="accounddemo" type="radio" />
-                            <span></span>
-                        </label>
-                    </span>
-                </a>
-                <a href="#!" class="list-item">
-                    <span class="material-icons">person</span>Account
-                    <span class="after">
-                        <label class="radio">
-                            <input type="radio" name="accounddemo" checked="" />
-                            <span></span>
-                        </label>
-                    </span>
-                </a>
-            </div>
-            <!--- Content !-->
-        </div>
-        <div class="dialog-footer">
-            <!--- Footer !-->
-            <button class="text">Select</button>
-            <button class="text">Cancel</button>
+## Usage 
+<div class="p-4 m-1 bg-dark-1">
+    <div class="dialog" id="a">
+        <div class="content">
+            Content goes here
+            <br>
+            <button id=aa class=btn>Close</button>
         </div>
     </div>
-</div>
-```
-
-## Trigger
-
-<div class="p-4 background-light-grey">
-    <button data-trigger="dialog" data-dialog="#demo-dialog-trigger" class="text">Open</button>
-        <div class="dialog-overlay" id="demo-dialog-trigger">
-            <div class="dialog">
-                <div class="dialog-header">
-                    <h3>Demo content</h3>
-                </div>
-                <div class="dialog-content">
-                 <p>demo content</p>
-             </div>
-             <div class="dialog-footer">
-                <button class="text" data-trigger="dialog" data-dialog="#demo-dialog-trigger" data-action="close">Dismiss</button>
-            </div>
-        </div>
-    </div>
+    <button id=aaa class=btn>Open</button>
 </div>
 
 ```xml
-<button data-trigger="dialog" data-dialog="#demo-dialog-trigger">Open</button>
-<div class="dialog-overlay" id="demo-dialog-trigger">
-    <div class="dialog">
-        <div class="dialog-header">
-            <h3>Demo content</h3>
-        </div>
-        <div class="dialog-content">
-            <p>demo content</p>
-        </div>
-        <div class="dialog-footer">
-            <button class="text" data-trigger="dialog" data-dialog="#demo-dialog-trigger" data-action="close">Dismiss</button>
-        </div>
+<div class="dialog" id="a">
+    <div class="content">
+        Content goes here
+        <br>
+        <button id=aa class=btn>Close</button>
     </div>
 </div>
+<button id=aaa class=btn>Open</button>
 ```
-Here are avaialable attributes.
-<div class="table-container">
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Attribute</th>
-                <th>Value(s)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Initialize trigger *</td>
-                <td>data-trigger</td>
-                <td>dialog</td>
-            </tr>
-            <tr>
-                <td>DOM selector of the dialog *</td>
-                <td>data-dialog</td>
-                <td>#id , .class , element</td>
-            </tr>
-            <tr>
-                <td>Action</td>
-                <td>data-action</td>
-                <td>open , close , toggle</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-## Bottom sheet style
-<div class="p-4 background-light-grey">
-<button class="text" data-trigger="dialog" data-dialog="#demodialogsheet">Open</button>
-   <div class="dialog-overlay" id="demodialogsheet">
-    <div class="dialog bottom-sheet">
-        <div class="dialog-header">
-            <h3>Accept Cookies</h3>
-        </div>
-        <div class="dialog-content">
-            <p class="text-muted">Cookies are yum yum dummy placeholder text for you and everyone nice to see the lorem</p>
-        </div>
-        <div class="dialog-footer">
-            <button class="text" onclick="jQuery('#demodialogsheet').toggleClass('open')">Accept</button>
-        </div>
-    </div>
-</div>
-</div>
-
-```xml
-<div class="dialog-overlay" id="demodialogsheet">
-    <div class="dialog bottom-sheet">
-        <div class="dialog-header">
-            <h3>Accept Cookies</h3>
-        </div>
-        <div class="dialog-content">
-            <p class="text-muted">Cookies are yum yum dummy placeholder text for you and everyone nice to see the lorem</p>
-        </div>
-        <div class="dialog-footer">
-            <button class="text" onclick="jQuery('#demodialogsheet').toggleClass('open')">Accept</button>
-        </div>
-    </div>
-</div>
-```
-## Full Screen dialog
-<div class="p-4 background-light-grey">
-    <button class="text" data-trigger="dialog" data-dialog="#demodialogfs">Open</button>
-    <div class="dialog-overlay" id="demodialogfs">
-            <div class="dialog fullscreen">
-                <div class="dialog-header">
-                    <div class="dialog-left">
-                        <button class="fab small unelevated" onclick="jQuery('#demodialogfs').toggleClass('open')"><span class="material-icons">close</span></button>
-                        <h3 style="margin-left: 10px;">Sound</h3>
-                    </div>
-                    <div class="dialog-right">
-                        <button class="unelevated" onclick="jQuery('#demodialogfs').toggleClass('open')">Close</button>
-                    </div>
-                </div>
-                <div class="dialog-content">
-                    <p class="text-muted">Cookies are yum yum dummy placeholder text for you and everyone nice to see the lorem</p>
-                </div>
-                <div class="dialog-footer">
-                    <button class="text" onclick="jQuery('#demodialogfs').toggleClass('open')">Dismiss</button>
-                    <button class="text" onclick="jQuery('#demodialogfs').toggleClass('open')">Okay</button>
-                </div>
-            </div>
-        </div>
-</div>
-
-```xml
-<div class="dialog-overlay" id="demodialogfs">
-    <div class="dialog fullscreen">
-        <div class="dialog-header">
-            <div class="dialog-left">
-                <button class="fab small unelevated" onclick="jQuery('#demodialogfs').toggleClass('open')"><span class="material-icons">close</span></button>
-                <h3 style="margin-left: 10px;">Sound</h3>
-            </div>
-            <div class="dialog-right">
-                <button class="unelevated" onclick="jQuery('#demodialogfs').toggleClass('open')">Close</button>
-            </div>
-        </div>
-        <div class="dialog-content">
-            <p class="text-muted">Cookies are yum yum dummy placeholder text for you and everyone nice to see the lorem</p>
-        </div>
-        <div class="dialog-footer">
-            <button class="text" onclick="jQuery('#demodialogfs').toggleClass('open')">Dismiss</button>
-            <button class="text" onclick="jQuery('#demodialogfs').toggleClass('open')">Okay</button>
-        </div>
-    </div>
-</div>
-```
-## JS (jQuery) API
-Add the class `open` to the dialog when you need to open it.
-Remove the class `open` from the dialog when you need to close it.
 
 ```javascript
-//Open
-$(".dialog-overlay#dialog").addClass('open');
-//Close
-$(".dialog-overlay#dialog").removeClass('open');
-//Toggle
-$(".dialog-overlay#dialog").toggleClass('open');
+let a = document.querySelector("#a");
+let aaa = document.querySelector("#aaa");
+let aa = document.querySelector("#aa");
+
+aaa.addEventListener("click", () => {
+    Material.Dialog.open(a);
+});
+
+aa.addEventListener("click", () => {
+    Material.Dialog.close(a);
+});
+```
+
+## Bottom sheet style 
+Add the class `bottom-sheet` to the dialog to make it a bottom sheet.
+
+## Javascript API
+```javascript
+let Dialog = Material.Dialog;
+// Open a dialog
+Dialog.open(element);
+// Close a dialog
+Dialog.close(element);
+// Toggle a dialog
+Dialog.toggle(element);
 ```

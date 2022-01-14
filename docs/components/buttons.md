@@ -1,224 +1,140 @@
-<div class="p-4 m-1 background-light-grey">
-	<button class="demobtn primary">Primary</button>
-	<button class="demobtn secondary">Secondary</button>
-	<button class="demobtn success">Success</button>
-	<button class="demobtn danger">Danger</button>
-	<button class="demobtn dark">Dark</button>
-	<button class="demobtn warning">Warning</button>
-	<br><br>
-	<button class="demobtn outlined primary">Outlined - Primary</button>
-	<button class="demobtn outlined secondary">Outlined - Secondary</button>
-	<button class="demobtn outlined success">Outlined - Success</button>
-	<button class="demobtn outlined danger">Outlined - Danger</button>
-	<button class="demobtn outlined dark">Outlined - Dark</button>
-	<button class="demobtn outlined warning">Outlined - Warning</button>
-	<br><br>
-	<button class="demobtn text primary">Text - Primary</button>
-	<button class="demobtn text secondary">Text - Secondary</button>
-	<button class="demobtn text success">Text - Success</button>
-	<button class="demobtn text danger">Text - Danger</button>
-	<button class="demobtn text dark">Text - Dark</button>
-	<button class="demobtn text warning">Text - Warning</button>
-	<br><br>
-	<button class="demobtn unelevated primary">Unelevated - Primary</button>
-	<button class="demobtn unelevated secondary">Unelevated - Secondary</button>
-	<button class="demobtn unelevated success">Unelevated - Success</button>
-	<button class="demobtn unelevated danger">Unelevated - Danger</button>
-	<button class="demobtn unelevated dark">Unelevated - Dark</button>
-	<button class="demobtn unelevated warning">Unelevated - Warning</button>
+<ins id="stable"></ins>
+
+## Types
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn primary">Normal</button>
+	<button class="btn primary unelevated">Unelevated</button>
+	<button class="btn outlined primary">Outlined</button>
+	<button class="btn text primary">Text</button>
 </div>
 
 ```xml
-<button class="primary">Primary</button>
-<button class="secondary">Secondary</button>
-<button class="success">Success</button>
-<button class="danger">Danger</button>
-<button class="dark">Dark</button>
-
-<button class="outlined primary">Outlined - Primary</button>
-<button class="outlined secondary">Outlined - Secondary</button>
-<button class="outlined success">Outlined - Success</button>
-<button class="outlined danger">Outlined - Danger</button>
-<button class="outlined dark">Outlined - Dark</button>
-
-<button class="text primary">Text - Primary</button>
-<button class="text secondary">Text - Secondary</button>
-<button class="text success">Text - Success</button>
-<button class="text danger">Text - Danger</button>
-<button class="text dark">Text - Dark</button>
-
-<button class="unelevated primary">Unelevated - Primary</button>
-<button class="unelevated secondary">Unelevated - Secondary</button>
-<button class="unelevated success">Unelevated - Success</button>
-<button class="unelevated danger">Unelevated - Danger</button>
-<button class="unelevated dark">Unelevated - Dark</button>
+<button class="btn primary">Normal</button>
+<button class="btn primary unelevated">Unelevated</button>
+<button class="btn outlined primary">Outlined</button>
+<button class="btn text primary">Text</button>
 ```
 
-## Normal button
-Add the class `.btn` to the element.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn">Click Me</button>
+## Colors
+
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn">Normal</button>
+	<button class="btn primary">Primary</button>
+	<button class="btn secondary">Secondary</button>
+	<button class="btn danger">Danger</button>
+	<button class="btn warning">Warning</button>
+	<button class="btn success">Success</button>
 </div>
 
 ```xml
-<button class="btn">Click Me</button>
+<button class="btn primary">Normal</button>
+<button class="btn primary unelevated">Unelevated</button>
+<button class="btn outlined primary">Outlined</button>
+<button class="btn text primary">Text</button>
 ```
 
-## Unelevated button
-Add the class `.unelevated` to the element.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn unelevated">Click Me</button>
+## Sizes
+
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn small">Small</button>
+	<button class="btn">Normal</button>
+	<button class="btn large">Large</button>
 </div>
 
 ```xml
-<button class="btn unelevated">Click Me</button>
+<button class="btn small">Small</button>
+<button class="btn">Normal</button>
+<button class="btn large">Large</button>
 ```
 
-## Text button
-Add the class `.text` to the element.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn text">Click Me</button>
+## Using Icons
+
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn primary">
+		<i class="mdi me-2 mdi-thumb-up"></i>
+		Like	
+	</button>
+	<button class="btn primary">
+		Like	
+		<i class="mdi ms-2 mdi-thumb-up"></i>
+	</button>
 </div>
 
 ```xml
-<button class="btn text">Click Me</button>
+<button class="btn primary">
+	<i class="mdi me-2 mdi-thumb-up"></i>
+	Like
+</button>
+<button class="btn primary">
+	Like
+	<i class="mdi ms-2 mdi-thumb-up"></i>
+</button>
 ```
 
-## Outlined button
-Add the class `.outlined` to the element.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn outlined">Click Me</button>
+## Disabled
+
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn disabled" disabled>Disabled</button>
+	<button class="btn outlined disabled" disabled>Disabled</button>
+	<button class="btn text disabled" disabled>Disabled</button>
+</div>
+Add the `disabled` attribute and the `disabled` class to the button to disable it.
+```
+<button class="btn disabled" disabled>Disabled</button>
+<button class="btn outlined disabled" disabled>Disabled</button>
+<button class="btn text disabled" disabled>Disabled</button>
+```
+
+## Icon Buttons
+
+<div class="p-4 m-1 bg-dark-1">
+	<button class="icon">
+		<i class="mdi mdi-thumb-up"></i>
+	</button>
+	<button class="icon">
+		<i class="mdi mdi-thumb-down"></i>
+	</button>
 </div>
 
 ```xml
-<button class="btn outlined">Click Me</button>
+<button class="icon">
+	<i class="mdi mdi-thumb-up"></i>
+</button>
+<button class="icon">
+	<i class="mdi mdi-thumb-down"></i>
+</button>
 ```
 
-## Link button
-Add the class `.btn` to the `a` element.
-<div class="p-4 m-1 background-light-grey">
-	<a class="btn" href="https://google.com" onclick="return false;">Click Me</a>
+## Interactive Examples
+
+You can use the button component to create stuff like this.
+
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn primary outlined">
+	Loading Stuff
+		<div style="transform:scale(0.3);height: 15px;width: 27px;margin-top: -15px;">
+        	<span class="progress circle" style="background:transparent;"></span>
+        </div>
+	</button>
 </div>
 
 ```xml
-<a class="btn" href="https://google.com">Click Me</a>
+<button class="btn primary outlined">
+	Loading Stuff
+	<div style="transform:scale(0.3);height: 15px;width: 27pxmargin-top: -15px;">
+    	<span class="progress circle" style="background:transparent;"><span>
+    </div>
+</button>
 ```
 
-## Disabled button
-Add the class `.disabled` to the element.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn disabled">Click Me</button>
+<div class="p-4 m-1 bg-dark-1">
+	<button class="btn outlined primary" style="outline-offset:-6px !important">
+		Button
+	</button>
 </div>
 
 ```xml
-<button class="btn disabled">Click Me</button>
+<button class="btn outlined primary" style="outline-offset:-6px !important">
+	Button
+</button>
 ```
-
-## Icons
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn"><i class="material-icons">favorite</i>Click Me</button>
-	<button class="btn">Click Me&nbsp;&nbsp;<i class="material-icons">favorite</i></button>
-</div>
-
-```xml
-<button class="btn"><i class="material-icons">favorite</i>Click Me</button>
-<button class="btn">Click Me&nbsp;&nbsp;<i class="material-icons">favorite</i></button>
-```
-
-## Shaped button
-Add the class `shaped` to the button.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn shaped">Click Me</button>
-</div>
-
-```xml
-<button class="btn shaped">Click Me</button>
-```
-
-## Square button
-Add the class `square` to the button.
-<div class="p-4 m-1 background-light-grey">
-	<button class="btn square">Click Me</button>
-</div>
-
-```xml
-<button class="btn square">Click Me</button>
-```
-
-## Button colors
-
-<div class="table-container">
-<table>
-	<thead>
-	<tr>
-	<th>Color</th>
-	<th>class</th>
-	<th>Preview</th>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Primary</td>
-		<td>--</td>
-		<td><button>Button</button>  </td>
-	</tr>
-	<tr>
-		<td>Secondary</td>
-		<td>.secondary</td>
-		<td><button class="secondary">Button</button></td>
-	</tr>
-	<tr>
-		<td>Success</td>
-		<td>.success</td>
-		<td><button class="success">Button</button></td>
-	</tr>
-	<tr>
-		<td>Danger</td>
-		<td>.danger</td>
-		<td><button class="danger">Button</button></td>
-	</tr>
-	<tr>
-		<td>Dark</td>
-		<td>.dark</td>
-		<td><button class="dark">Button</button></td>
-	</tr>
-	<tr>
-		<td>Warning</td>
-		<td>.warning</td>
-		<td><button class="warning">Button</button></td>
-	</tr>
-</tbody>
-</table>
-</div>
-
-
-## Button sizes
-
-<div class="table-container">
-<table>
-	<thead>
-	<tr>
-	<th>Size</th>
-	<th>class</th>
-	<th>Preview</th>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Normal</td>
-		<td>--</td>
-		<td><button>Button</button>  </td>
-	</tr>
-	<tr>
-		<td>Large</td>
-		<td>.large</td>
-		<td><button class="large">Button</button></td>
-	</tr>
-	<tr>
-		<td>Small</td>
-		<td>.small</td>
-		<td><button class="small">Button</button></td>
-	</tr>
-</tbody>
-</table>
-</div>

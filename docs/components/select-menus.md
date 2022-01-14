@@ -1,177 +1,148 @@
+<ins id="stable"></ins>
+
 ## Filled Select
 
-<div class="p-5 m-1">
-	<div class="select-container filled">
-		<label for="demoselect">Select</label>
-		<select id="demoselect">
-			<option></option>
-			<option value="v">Option 1</option>
-			<option value="v">Option 2</option>
-			<option value="v">Option 3</option>
-			<option value="v">Option 4</option>
-			<option value="v">Option 5</option>
-		</select>
+<div class="p-4 m-1">
+	<div class="textbox">
+		<div class="left">
+		</div>
+		<div class="middle">
+			<label for="aaaa" class="label">Label</label>
+			<select class="input" id=aaaa>
+				<option value="" disabled selected>Placeholder</option>
+				<option value="v">Option 2</option>
+				<option value="v">Option 3</option>
+				<option value="v">Option 4</option>
+			</select>
+		</div>
+		<div class="right"></div>
 	</div>
 </div>
 
 ```xml
-<div class="select-container filled">
-	<label for="demoselect">Select</label>
-	<select id="demoselect">
-		<option></option>
-		<option value="v">Option 1</option>
-		<option value="v">Option 2</option>
-		<option value="v">Option 3</option>
-		<option value="v">Option 4</option>
-		<option value="v">Option 5</option>
-	</select>
+<div class="textbox">
+	<div class="left">
+	</div>
+	<div class="middle">
+		<label for="aaaa" class="label">Label</label>
+		<select class="input" id=aaaa>
+			<option value="" disabled selected>Placeholder</option>
+			<option value="v">Option 2</option>
+			<option value="v">Option 3</option>
+			<option value="v">Option 4</option>
+		</select>
+	</div>
+	<div class="right"></div>
 </div>
 ```
 
 ## Outlined Select
 
-<div class="p-5 m-1">
-	<div class="select-container outlined">
-		<label for="demoselectoutlined">Select</label>
-		<select id="demoselectoutlined">
-			<option></option>
-			<option value="v">Option 1</option>
+<div class="p-4 m-1">
+	<div class="textbox outlined">
+		<div class="left">
+		</div>
+		<div class="middle">
+			<label for="bb" class="label">Label</label>
+			<select class="input" id=bb>
+				<option value="" disabled selected>Placeholder</option>
+				<option value="v">Option 2</option>
+				<option value="v">Option 3</option>
+				<option value="v">Option 4</option>
+			</select>
+		</div>
+		<div class="right"></div>
+	</div>
+</div>
+
+```xml
+<div class="textbox outlined">
+	<div class="left">
+	</div>
+	<div class="middle">
+		<label for="bb" class="label">Label</label>
+		<select class="input" id=bb>
+			<option value="" disabled selected>Placeholder</option>
 			<option value="v">Option 2</option>
 			<option value="v">Option 3</option>
 			<option value="v">Option 4</option>
-			<option value="v">Option 5</option>
 		</select>
+	</div>
+	<div class="right"></div>
+</div>
+```
+
+## Border bottom select
+
+<div class="p-4 m-1">
+	<div class="textbox border-bottom">
+		<div class="left">
+		</div>
+		<div class="middle">
+			<label for="cc" class="label">Label</label>
+			<select class="input" id=cc>
+				<option value="" disabled selected>Placeholder</option>
+				<option value="v">Option 2</option>
+				<option value="v">Option 3</option>
+				<option value="v">Option 4</option>
+			</select>
+		</div>
+		<div class="right"></div>
 	</div>
 </div>
 
 ```xml
-<div class="select-container outlined">
-	<label for="demoselectoutlined">Select</label>
-	<select id="demoselectoutlined">
-		<option></option>
-		<option value="v">Option 1</option>
-		<option value="v">Option 2</option>
-		<option value="v">Option 3</option>
-		<option value="v">Option 4</option>
-		<option value="v">Option 5</option>
-	</select>
-</div>
-```
-
-## Border bottom Select
-
-<div class="p-5 m-1">
-	<div class="select-container border-bottom">
-		<label for="demoselectborderb">Select</label>
-		<select id="demoselectborderb">
-			<option></option>
-			<option value="v">Option 1</option>
+<div class="textbox border-bottom">
+	<div class="left">
+	</div>
+	<div class="middle">
+		<label for="cc" class="label">Label</label>
+		<select class="input" id=cc>
+			<option value="" disabled selected>Placeholder</option>
 			<option value="v">Option 2</option>
 			<option value="v">Option 3</option>
 			<option value="v">Option 4</option>
-			<option value="v">Option 5</option>
 		</select>
+	</div>
+	<div class="right"></div>
+</div>
+```
+
+## Select with icons
+
+<div class="p-4 m-1">
+	<div class="textbox">
+		<div class="left">
+			<i class="mdi mdi-heart"></i>
+		</div>
+		<div class="middle">
+			<label for="aaaa" class="label">Label</label>
+			<select class="input" id=aaaa>
+				<option value="" disabled selected>Placeholder</option>
+				<option value="v">Option 2</option>
+				<option value="v">Option 3</option>
+				<option value="v">Option 4</option>
+			</select>
+		</div>
+		<div class="right">
+			<i class="mdi mdi-heart"></i>
+		</div>
 	</div>
 </div>
 
 ```xml
-<div class="select-container border-bottom">
-	<label for="demoselectborderb">Select</label>
-	<select id="demoselectborderb">
-		<option></option>
-		<option value="v">Option 1</option>
-		<option value="v">Option 2</option>
-		<option value="v">Option 3</option>
-		<option value="v">Option 4</option>
-		<option value="v">Option 5</option>
-	</select>
-</div>
-```
-
-## Disabled Items and optgroups
-
-<div class="p-5 m-1">
-	<div class="select-container filled">
-		<label for="demoselectfilledd">Select</label>
-		<select id="demoselectfilledd">
-			<option></option>
-			<option value="v">Option 1</option>
-			<option value="v" disabled>Disabled</option>
-			<option value="v" selected>Selected</option>
+<div class="textbox">
+	<div class="left">
+	</div>
+	<div class="middle">
+		<label for="aaaa" class="label">Label</label>
+		<select class="input" id=aaaa>
+			<option value="" disabled selected>Placeholder</option>
+			<option value="v">Option 2</option>
+			<option value="v">Option 3</option>
 			<option value="v">Option 4</option>
-			<optgroup label="Optgroup">
-				<option value="v">Option 1</option>
-				<option value="v" disabled>Disabled</option>
-				<option value="v">Selected</option>
-			</optgroup>
-			<option value="v">Option 5</option>
 		</select>
 	</div>
-</div>
-
-```xml
-<div class="select-container filled">
-	<label for="demoselectfilledd">Select</label>
-	<select id="demoselectfilledd">
-		<option></option>
-		<option value="v">Option 1</option>
-		<option value="v" disabled>Disabled</option>
-		<option value="v" selected>Selected</option>
-		<option value="v">Option 4</option>
-		<optgroup label="Optgroup">
-			<option value="v">Option 1</option>
-			<option value="v" disabled>Disabled</option>
-			<option value="v">Selected</option>
-		</optgroup>
-		<option value="v">Option 5</option>
-	</select>
-</div>
-```
-
-## Disabled Select
-
-<div class="p-5 m-1">
-	<div class="select-container filled disabled" tabindex="-1">
-		<label for="demoselectdis">Select</label>
-		<select id="demoselectdis" disabled>
-			<option></option>
-			<option value="v">Option 1</option>
-			<option value="v">Option 2</option>
-		</select>
-	</div>
-</div>
-
-```xml
-<div class="select-container filled disabled" tabindex="-1">
-	<label for="demoselect">Select</label>
-	<select id="demoselect" disabled>
-		<option></option>
-		<option value="v">Option 1</option>
-		<option value="v">Option 2</option>
-	</select>
-</div>
-```
-
-## Error State
-
-<div class="p-5 m-1">
-	<div class="select-container filled error">
-		<label for="demoselecter">Select</label>
-		<select id="demoselecter">
-			<option></option>
-			<option value="v">Option 1</option>
-			<option value="v">Option 2</option>
-		</select>
-	</div>
-</div>
-
-```xml
-<div class="select-container filled error">
-	<label for="demoselect">Select</label>
-	<select id="demoselect">
-		<option></option>
-		<option value="v">Option 1</option>
-		<option value="v">Option 2</option>
-	</select>
+	<div class="right"></div>
 </div>
 ```
