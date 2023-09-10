@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+
+<div class="p-4 bg-primary-5" style="color: #fff">
+	<h1 class="display-h5 m-0">{{ page.title }} </h1>
+</div>
+
 <article class="container-fluid">
+	
+	
+
 	<div class="row">
 		<aside class="col-4 col-lg-2">
-			<div class="list small" style="border-right: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;margin-left: -10px;">
+			<div class="list" style="border-right: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;margin-left: -10px;">
 				{% if nav|length>1 %}
 				{% for nav_item in nav %} {% if nav_item.children %}
 				<p class="ms-2 color-dark-6">{{ nav_item.title }}</p>
@@ -27,16 +35,8 @@
 				{% endif %}
 			</div>
 		</aside>
+
 		<main class="col-8 col-lg-10">
-			<div id="offers-content">
-				<ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
-					data-ad-layout-key="-gs-3+1f-3d+2z" data-ad-client="ca-pub-8836219589547174"
-					data-ad-slot="6464200648"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			<h1 class="display-h2 mb-0">{{ page.title }} </h1>
 			<div class="row">
 				<div class="col-9">
 					{% set toc_num = namespace(value=0) %}

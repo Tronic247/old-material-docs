@@ -1,129 +1,199 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>
+			{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name}}
+		</title>
 
-<head>
-  <title>
-    {% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name}}
-  </title>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.body.style.display = "block";
-    });
-  </script>
-  <link rel="shortcut icon" href="{{ base_url }}/logo.svg" />
-  <meta name="title" content="{% if page.title %}{{ page.title }} - {% endif %}{{
-        config.site_name}}" />
-  {% if page.title %}
-  <meta name="description" content="The documentation for {% if page.title %}{{ page.title }}{% endif %}" />
-  {% endif %}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <meta name="keywords"
-    content="Material design, material-design-framework , jquery material design, best material-design framework" />
-  <meta name="theme-color" content="#1976d2" />
-  <meta name="robots" content="index, follow" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="language" content="English" />
-  <meta name="manifest" content="manifest.json" />
-  <meta name="revisit-after" content="2 days" />
-  <meta name="author" content="Tronic247" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/material.min.css" />
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
-</head>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				document.body.style.display = "block";
+			});
+		</script>
 
-<body class="container-fluid p-0 m-0">
-  <header class="appbar primary elevating"
-    style="transition: none !important;position: sticky;top: 0;overflow: visible !important;" id="appbar">
-    <div class="left">
-      <a href="{{ base_url }}" class="title color-dark-1">Tronic247 Material</a>
-    </div>
-    <div class="right">
-      <div id="docsearch">
-        <input class="appbar-input mr-4" placeholder="Search" id="search" />
-      </div>
-      <a href="{{ base_url }}/components/alerts/" class="btn hide-on-mobile text">
-        Components
-      </a>
-    </div>
-  </header>
+		<link rel="shortcut icon" href="{{ base_url }}/logo.svg" />
+		<meta
+			name="title"
+			content="{% if page.title %}{{ page.title }} - {% endif %}{{
+        config.site_name}}"
+		/>
 
-  <!-- Adsense ad -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8836219589547174" data-ad-slot="1318634450"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  {% block content %}{% endblock %}
+		{% if page.title %}
 
-  <!-- Adsense ad -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8836219589547174" data-ad-slot="1318634450"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+		<meta
+			name="description"
+			content="The documentation for {% if page.title %}{{ page.title }}{% endif %}"
+		/>
 
-  <!-- Adsense ad -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8836219589547174" data-ad-slot="1318634450"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  <footer class="p-4 pt-0 bg-primary-5 color-dark-1">
-    <div class="row">
-      <a href="/advertising.html" class="p-4 btn outlined warning mt-2 mb-2 rounded unelevated" style="display: block;">
-        Your Ad here
-      </a>
-      <div class="col">
-        <h5 class="mt-2">People who supported this project</h5>
-        <a href="https://github.com/tronic247/material-docs/graphs/contributors">
-          <img src="https://contrib.rocks/image?repo=tronic247/material-docs" />
-        </a>
-        <br />
-        <p>
-          Want to be on this list ? Send a PR to this
-          <a href="https://github.com/Tronic247/material" class="btn text p-0 warning" rel="follow">Github
-            repository</a>
-        </p>
-        <p>
-          Created by
-          <a href="http://tronic247.com/?ref=material" class="btn text p-0 warning" rel="follow">Tronic247</a>
-        </p>
-      </div>
-      <div class="col">
-        <h5 class="mt-2">Problems or feature requests?</h5>
-        <p>
-          Join us on
-          <a href="https://discord.gg/Xusx5WFwMH" class="btn text p-0 warning">Discord</a>
-          and start chatting ! Or else visit our
-          <a href="https://github.com/Tronic247/material" class="btn text p-0 warning">Github Repository</a>
-          and create an issue or send a Pull request.
-        </p>
-        <a href="https://www.producthunt.com/posts/tronic247-material?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tronic247-material" target="_blank" class="mt-2"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=326205&theme=light" alt="Tronic247 Material - Material design UI framework for the web | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/material.min.js"></script>
-  <script src="{{ base_url }}/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
-  <script data-ad-client="ca-pub-8836219589547174" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
-  <script>
-    hljs.highlightAll();
-    docsearch({
-      container: '#docsearch',
-      appId: 'ND5NCUL028',
-      indexName: 'tronic_material',
-      apiKey: '81f63feaa30dab637d7b75b90e2d0ebd',
-      placeholder: 'Search for components',
-    });
-  </script>
-</body>
+		{% endif %}
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<meta
+			name="keywords"
+			content="Material design, material-design-framework , jquery material design, best material-design framework"
+		/>
+		<meta name="theme-color" content="#1976d2" />
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="language" content="English" />
+		<meta name="manifest" content="manifest.json" />
+		<meta name="revisit-after" content="2 days" />
+		<meta name="author" content="Tronic247" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/tronic247/material/dist/material.min.css"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"
+		/>
+	</head>
+
+	<body class="container-fluid p-0 m-0">
+		<header
+			class="appbar primary elevation-3"
+			style="
+				position: sticky;
+				top: 0;
+				overflow: visible !important;
+			"
+			id="appbar"
+		>
+			<div class="left">
+				<a href="{{ base_url }}" class="title color-dark-1"
+					>Tronic247 Material</a
+				>
+			</div>
+			<div class="right">
+				<div id="docsearch">
+					<input class="appbar-input mr-4" placeholder="Search" id="search" />
+				</div>
+				<a
+					href="{{ base_url }}/components/alerts/"
+					class="btn hide-on-mobile text"
+				>
+					Components
+				</a>
+			</div>
+		</header>
+
+		{% block content %}{% endblock %}
+
+		<!-- Adsense ad -->
+		<ins
+			class="adsbygoogle"
+			style="display: block"
+			data-ad-client="ca-pub-8836219589547174"
+			data-ad-slot="1318634450"
+			data-ad-format="auto"
+			data-full-width-responsive="true"
+		></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<footer class="p-4 pt-0 bg-primary-5 color-dark-1">
+			<div class="row">
+				<a
+					href="/advertising.html"
+					class="p-4 btn outlined warning mt-2 mb-2 rounded unelevated"
+					style="display: block"
+				>
+					Your Ad here
+				</a>
+				<div class="col">
+					<h5 class="mt-2">People who supported this project</h5>
+					<a
+						href="https://github.com/tronic247/material-docs/graphs/contributors"
+					>
+						<img
+							src="https://contrib.rocks/image?repo=tronic247/material-docs"
+						/>
+					</a>
+					<br />
+					<p>
+						Want to be on this list ? Send a PR to this
+						<a
+							href="https://github.com/Tronic247/material"
+							class="btn text p-0 warning"
+							rel="follow"
+							>Github repository</a
+						>
+					</p>
+					<p>
+						Created by
+						<a
+							href="http://tronic247.com/?ref=material"
+							class="btn text p-0 warning"
+							rel="follow"
+							>Tronic247</a
+						>
+					</p>
+				</div>
+				<div class="col">
+					<h5 class="mt-2">Problems or feature requests?</h5>
+					<p>
+						Join us on
+						<a href="https://discord.gg/Xusx5WFwMH" class="btn text p-0 warning"
+							>Discord</a
+						>
+						and start chatting ! Or else visit our
+						<a
+							href="https://github.com/Tronic247/material"
+							class="btn text p-0 warning"
+							>Github Repository</a
+						>
+						and create an issue or send a Pull request.
+					</p>
+					<a
+						href="https://www.producthunt.com/posts/tronic247-material?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tronic247-material"
+						target="_blank"
+						class="mt-2"
+						><img
+							src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=326205&theme=light"
+							alt="Tronic247 Material - Material design UI framework for the web | Product Hunt"
+							style="width: 250px; height: 54px"
+							width="250"
+							height="54"
+					/></a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/gh/tronic247/material/dist/material.min.js"></script>
+		<script src="{{ base_url }}/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
+
+		<script
+			data-ad-client="ca-pub-8836219589547174"
+			async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+		<script>
+			hljs.highlightAll();
+			docsearch({
+				container: "#docsearch",
+				appId: "ND5NCUL028",
+				indexName: "tronic_material",
+				apiKey: "81f63feaa30dab637d7b75b90e2d0ebd",
+				placeholder: "Search for components",
+			});
+		</script>
+	</body>
 </html>
